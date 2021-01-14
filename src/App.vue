@@ -1,6 +1,30 @@
 <template>
     <div id="App">
-        
+
+        <header class="ai-center jc-space" id="header">
+            <div class="logo">
+                <img src="./assets/katmannedioLogo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <ul class="flex">
+                    <li>
+                        <router-link to="/testler">Anasayfa</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/testler">Testler</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/ekip">Ekip</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/hype">Hype</router-link>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="router-view-container">
+            <router-view />
+        </div>
     </div>
 </template>
 
@@ -24,5 +48,6 @@ export default {
 <style>
 
 @import url('./css/main.css');
+@import url('./css/header.css');
 
 </style>

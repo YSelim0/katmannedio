@@ -25,3 +25,15 @@
     justify-content: space-between;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: rgb(72, 72, 255);
+}
+
+.router-view-container {
+    width: 100%;
+    margin-top: 75px;
+}
