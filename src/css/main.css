@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.ai-center {
+    display: flex;
+    align-items: center;
+}
+
+.jc-center {
+    display: flex;
+    justify-content: center;
+}
+
+.jc-space {
+    display: flex;
+    justify-content: space-between;
+}
+
