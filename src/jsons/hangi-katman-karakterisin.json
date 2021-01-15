@@ -1,3 +1,125 @@
 {
-    
+    "title":"Hangi Katman Karakterisin?",
+    "questions":[
+        {
+            "id":1,
+            "questionText":"Güzel bir kız gördüğünde ne yaparsın?",
+            "optionA":"Sadece arkadaş olmak için muhabbet açarım.",
+            "optionAvalue":10,
+            "optionB":"Hemen yürürüm!",
+            "optionBvalue":20,
+            "optionC":"Hiç o taraflı olmam.",
+            "optionCvalue":5,
+            "optionD":"Kızlar bu dünyaya gelmiş en iyi varlık!?",
+            "optionDvalue":15
+        },
+        {
+            "id":2,
+            "questionText":"Bir Cumartesi sabahı uyandım ve ...... kararı aldım.",
+            "optionA":"Ev arkadaşıma poğaça ısmarlama ;)",
+            "optionAvalue":15,
+            "optionB":"Evde kalıp oyun oynama",
+            "optionBvalue":5,
+            "optionC":"Naneli nargile içme",
+            "optionCvalue":10,
+            "optionD":"At çiftliğine gitme",
+            "optionDvalue":20
+        },
+        {
+            "id":3,
+            "questionText":"Yayının da 5000TL donate geldi!",
+            "optionA":"Yarısını izleyicilerime veririm.",
+            "optionAvalue":20,
+            "optionB":"Sevgilime hediye alırım.",
+            "optionBvalue":10,
+            "optionC":"Tamamını kırmızıya basarım.",
+            "optionCvalue":15,
+            "optionD":"Tüm paramı hamsiye yatırırım.",
+            "optionDvalue":5
+        },
+        {
+            "id":4,
+            "questionText":"Kavga eden birilerini gördüm!?",
+            "optionA":"Ayırmaya çalışırım , kavga iyi bir şey değil.",
+            "optionAvalue":15,
+            "optionB":"Daha çok gazlarım xd",
+            "optionBvalue":10,
+            "optionC":"Sevdiğim kişinin tarafına geçerim , kavgaya katılırım.",
+            "optionCvalue":20,
+            "optionD":"Sadece izleyip anın zevkini çıkarırım.",
+            "optionDvalue":5
+        },
+        {
+            "id":5,
+            "questionText":"Daha fazla insana ulaşabilmek için...",
+            "optionA":"Çeşitli reklam yollarını denerim.",
+            "optionAvalue":5,
+            "optionB":"Ünlü bi yayıncının yayınlarına çıkıp şive yaparım (:",
+            "optionBvalue":15,
+            "optionC":"KONTENT YAZARIM!",
+            "optionCvalue":20,
+            "optionD":"Niye insanlara ulaşıyomki aq",
+            "optionDvalue":10
+        },
+        {
+            "id":6,
+            "questionText":"Ailemi .... de bir ziyarete giderim.",
+            "optionA":"Haftada bir",
+            "optionAvalue":15,
+            "optionB":"Aynı evde kalıyoruz zzaten",
+            "optionBvalue":20,
+            "optionC":"Farklı şehirdeyim yani yoksaa..",
+            "optionCvalue":15,
+            "optionD":"Ayda bir",
+            "optionDvalue":5
+        },
+        {
+            "id":7,
+            "questionText":"Arkadaşlarım .... olduğumu söyler. (:",
+            "optionA":"Şerefsiz",
+            "optionAvalue":10,
+            "optionB":"Komik",
+            "optionBvalue":20,
+            "optionC":"Akıllı",
+            "optionCvalue":15,
+            "optionD":"Saf",
+            "optionDvalue":5
+        },
+        {
+            "id":8,
+            "questionText":"Arkadaş grubunun ....-sıyım.",
+            "optionA":"Enayi",
+            "optionAvalue":10,
+            "optionB":"Satıcı",
+            "optionBvalue":5,
+            "optionC":"Yancı",
+            "optionCvalue":10,
+            "optionD":"Karşı cinsçi",
+            "optionDvalue":15
+        },
+        {
+            "id":9,
+            "questionText":"Oyunların .....-ni kesinlikle benim!",
+            "optionA":"Beyini",
+            "optionAvalue":10,
+            "optionB":"Şakacısı",
+            "optionBvalue":15,
+            "optionC":"Tryhardı",
+            "optionCvalue":5,
+            "optionD":"Zevkine oynayanı",
+            "optionDvalue":20
+        },
+        {
+            "id":10,
+            "questionText":"1v1'lerde...",
+            "optionA":"Rakibimi çıldırtana kadar aşağılarım.",
+            "optionAvalue":15,
+            "optionB":"Her şeyin özünde bir oyun olduğunu hatırlatırım.",
+            "optionBvalue":5,
+            "optionC":"Yenemezsem bahane bulurum.",
+            "optionCvalue":10,
+            "optionD":"Her türlü yenen ben olurum.",
+            "optionDvalue":20
+        }
+    ]
 }
