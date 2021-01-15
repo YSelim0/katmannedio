@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Testler from '../views/Testler.vue'
 import hangiKatmanKarakterisin from '../views/hangi-katman-karakterisin.vue'
+import Ekip from '../views/Ekip.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/hangi-katman-karakterisin',
     name: 'hangi-katman-karakterisin',
     component: hangiKatmanKarakterisin
+  },
+  {
+    path: '/ekip',
+    name: 'Ekip',
+    component: Ekip
   }
 ]
 

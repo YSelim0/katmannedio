@@ -66,7 +66,7 @@
             "questionText":"Ailemi .... de bir ziyarete giderim.",
             "optionA":"Haftada bir",
             "optionAvalue":15,
-            "optionB":"Aynı evde kalıyoruz zzaten",
+            "optionB":"Aynı evde kalıyoruz z-zaten",
             "optionBvalue":20,
             "optionC":"Farklı şehirdeyim yani yoksaa..",
             "optionCvalue":15,
@@ -88,8 +88,8 @@
         {
             "id":8,
             "questionText":"Arkadaş grubunun ....-sıyım.",
-            "optionA":"Enayi",
-            "optionAvalue":10,
+            "optionA":"Kurnaz",
+            "optionAvalue":20,
             "optionB":"Satıcı",
             "optionBvalue":5,
             "optionC":"Yancı",
@@ -112,7 +112,7 @@
         {
             "id":10,
             "questionText":"1v1'lerde...",
-            "optionA":"Rakibimi çıldırtana kadar aşağılarım.",
+            "optionA":"Rakibimi çıldırtana kadar konuşurum.",
             "optionAvalue":15,
             "optionB":"Her şeyin özünde bir oyun olduğunu hatırlatırım.",
             "optionBvalue":5,
@@ -120,6 +120,28 @@
             "optionCvalue":10,
             "optionD":"Her türlü yenen ben olurum.",
             "optionDvalue":20
+        }
+    ],
+    "results":[
+        {
+            "person":"BatuhanMNT",
+            "description":"selam ben mnt",
+            "image":"https://instagram.fadb3-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/123652517_165417755242984_804144168336909721_n.jpg?_nc_ht=instagram.fadb3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=l39oon5JA50AX-pC3dN&tp=1&oh=a95bcdd3d169fd3d177ad04ccbab211e&oe=602B1660https://instagram.fadb3-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/123652517_165417755242984_804144168336909721_n.jpg?_nc_ht=instagram.fadb3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=l39oon5JA50AX-pC3dN&tp=1&oh=a95bcdd3d169fd3d177ad04ccbab211e&oe=602B1660"
+        },
+        {
+            "person":"Mete53",
+            "description":"selam ben mete",
+            "image":"https://instagram.fbtz1-7.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/117298303_740063316792205_2766335560139852155_n.jpg?_nc_ht=instagram.fbtz1-7.fna.fbcdn.net&_nc_cat=101&_nc_ohc=KvnpvK8wqBIAX9OH1EP&tp=1&oh=de86e7c30adcb1e153a7cc7915cdb44a&oe=6029F2EB"
+        },
+        {
+            "person":"Nuriben",
+            "description":"selam ben nuru",
+            "image":"https://instagram.fbtz1-7.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/116848252_990636268023817_6409865907474172123_n.jpg?_nc_ht=instagram.fbtz1-7.fna.fbcdn.net&_nc_cat=101&_nc_ohc=LLE_IcZ1BVwAX96_ST7&tp=1&oh=f2505b6017e0e2ae5049518ea9798492&oe=6029D907"
+        },
+        {
+            "person":"Hype",
+            "description":"selam ben hype",
+            "image":"https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/e35/120456708_802231387257428_3849459111948069762_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=-WcxHGggigwAX-4-LMb&se=7&tp=1&oh=6a4a0bc16bf88dbff9253aae42e6f697&oe=6029FD7A&ig_cache_key=MjQxMTg1MzY0ODQ2NzI0NzcwNw%3D%3D.2"
         }
     ]
 }

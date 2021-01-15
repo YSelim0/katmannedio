@@ -32,11 +32,12 @@
       </div>
       <div class="end flex ai-center" v-if="screen=='end'">
           <div class="photo middle">
-              <img src="https://scontent-frt3-1.cdninstagram.com/v/t51.2885-15/e35/120456708_802231387257428_3849459111948069762_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com&_nc_cat=108&_nc_ohc=-WcxHGggigwAX-4-LMb&se=7&tp=1&oh=6a4a0bc16bf88dbff9253aae42e6f697&oe=6029FD7A&ig_cache_key=MjQxMTg1MzY0ODQ2NzI0NzcwNw%3D%3D.2" alt="">
+              <img v-bind:src="resultImage" v-bind:alt="resultTitle">
           </div>
           <div class="description">
-              <h1>Çağrı Ergün !</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio modi repudiandae doloribus fugiat ipsa illo corporis. Eaque, qui maxime!</p>
+              <h1>{{ resultTitle }} !</h1>
+              <p>{{ resultDescription }}</p>
+              <p class="note">NOT = Burası kesinlikle doğru cevap vermiyor , zaten verse katman yapımı olmazdı.</p>
           </div>
       </div>
   </div>
@@ -60,6 +61,10 @@ export default {
             optionD:'',
             checked:true,
             screen:'start',
+            resultTitle:'',
+            resultDescription:'',
+            resultImage:'',
+            totalPoint:0,
         }
     },
     created(){
@@ -80,11 +85,15 @@ export default {
                 this.optionD = this.questions[this.questionTurn].optionD;
                 this.questionTurn++;
                 this.checked=false;
+                this.giveAnswer();
                 this.unCheckButtons();
             }
             else if(this.questionTurn==10)
             {
                 this.screen = 'end';
+                this.giveAnswer();
+                this.calculatePoints();
+                this.theEnd();
             }
         },
         changeNextButton(value){
@@ -98,6 +107,91 @@ export default {
             {
                 item.checked = false;
             }
+        },
+        giveAnswer(){
+            let list = document.getElementsByClassName('questionButtons');
+            let item;
+            for(item of list)
+            {
+                if(item.checked==true)
+                {
+                    this.answers.push(item.id);
+                }
+            }
+        },
+        calculatePoints(){
+            for(let i=0; i<this.answers.length; i++)
+            {
+                let choose = String(this.answers[i]);
+                if(choose=="optionA")
+                {
+                    let item;
+                    for(item of this.questions)
+                    {
+                        if(item.id==(i+1))
+                        {
+                            this.totalPoint += item.optionAvalue;
+                        }
+                    }
+                }
+                else if(choose=="optionB")
+                {
+                    let item;
+                    for(item of this.questions)
+                    {
+                        if(item.id==(i+1))
+                        {
+                            this.totalPoint += item.optionBvalue;
+                        }
+                    }
+                }
+                else if(choose=="optionC")
+                {
+                    let item;
+                    for(item of this.questions)
+                    {
+                        if(item.id==(i+1))
+                        {
+                            this.totalPoint += item.optionCvalue;
+                        }
+                    }
+                }
+                else if(choose=="optionD")
+                {
+                    let item;
+                    for(item of this.questions)
+                    {
+                        if(item.id==(i+1))
+                        {
+                            this.totalPoint += item.optionDvalue;
+                        }
+                    }
+                }
+            }
+        },
+        theEnd(){
+            let persons = test.results;
+            let index;
+            if(this.totalPoint<=120)
+            {
+                index=0;
+            }
+            else if(this.totalPoint>=125 && this.totalPoint<145)
+            {
+                index=1;
+            }
+            else if(this.totalPoint>=145 && this.totalPoint <165)
+            {
+                index=2;
+            }
+            else if(this.totalPoint>=165)
+            {
+                index=3;
+            }
+
+            this.resultTitle = persons[index].person;
+            this.resultDescription = persons[index].description;
+            this.resultImage = persons[index].image;
         }
     }
 }
@@ -245,10 +339,11 @@ export default {
     flex-direction: column;
     box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
     background-color: rgb(228, 228, 228);
+    position: relative;
 }
 
 .end .photo img {
-    width: 80%;
+    width: 60%;
 }
 
 .end .description {
@@ -263,6 +358,11 @@ export default {
 
 .end .description p {
     font-family: 'Roboto' , sans-serif;
+}
+
+.note {
+    text-decoration: underline;
+    margin-top: 30px;
 }
 
 </style>

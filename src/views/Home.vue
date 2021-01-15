@@ -6,6 +6,7 @@
         <div class="message">
           <h1>KatmanNeDio?</h1>
           <p>Merhabalar, forumumuza hoşgeldiniz. İçeride çeşitli testler ve eğlenceli içerikler bulunuyor. İyi Eğlenceler!</p>
+          <p>Not: Yakın zamanda içerikler çoğaltılacaktır.</p>
         </div>
       </div>
       <div class="products middle">
