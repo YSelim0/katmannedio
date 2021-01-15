@@ -1,6 +1,5 @@
 <template>
     <div id="App">
-
         <header class="ai-center jc-space" id="header">
             <div class="logo">
                 <img src="./assets/katmannedioLogo.png" alt="logo">
@@ -8,7 +7,7 @@
             <div class="nav">
                 <ul class="flex">
                     <li>
-                        <router-link to="/testler">Anasayfa</router-link>
+                        <router-link to="/">Anasayfa</router-link>
                     </li>
                     <li>
                         <router-link to="/testler">Testler</router-link>
@@ -17,7 +16,7 @@
                         <router-link to="/ekip">Ekip</router-link>
                     </li>
                     <li>
-                        <router-link to="/hype">Hype</router-link>
+                        <a href="http://aynisinemalar.com/" target="blank">Hype</a>
                     </li>
                 </ul>
             </div>

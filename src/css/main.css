@@ -10,6 +10,12 @@
     display: flex;
 }
 
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .ai-center {
     display: flex;
     align-items: center;
