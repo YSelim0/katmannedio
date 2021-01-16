@@ -1,20 +1,20 @@
 <template>
-  <div class="container middle">
-      <div class="start flex" v-if="screen=='start'">
-          <h1>{{ TestTitle }}</h1>
-          <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
-          <p>Başlamak İçin 'Başla' Tuşun Tıklayın.</p>
-          <button class="middle" v-on:click="screen='question';">Başla</button>
-      </div>
-      <div class="question" v-if="screen=='question'">
-          <div class="title">
+    <div class="main-container middle">
+        <div class="start flex" v-if="screen=='start'">
+            <h1>{{ TestTitle }}</h1>
+            <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
+            <p>Başlamak İçin 'Başla' Tuşun Tıklayın.</p>
+            <button class="middle" v-on:click="screen='question';">Başla</button>
+        </div>
+        <div class="question" v-if="screen=='question'">
+            <div class="title">
               <h1>{{ TestTitle }}</h1>
-          </div>
-          <div class="question-text flex">
+            </div>
+            <div class="question-text flex">
               <h1><i class="fas fa-thumbtack"></i></h1>
-              <p>{{ this.questionTurn }}-) {{ questionTitle }}</p>
-          </div>
-          <div class="options flex">
+              <p>{{ questionTurn }}-) {{ questionTitle }}</p>
+            </div>
+            <div class="options flex">
               <input type="radio" name="option" id="optionA" value="optionA" class="questionButtons">
               <label for="optionA" @click="changeNextButton(true)">{{ optionA }}</label>
               <input type="radio" name="option" id="optionB" value="optionB" class="questionButtons">
@@ -29,39 +29,39 @@
                   {{ questionTurn!=10 ? 'Sonraki Soru' : 'Bitir' }}
               </button>
           </div>
-      </div>
-      <div class="end flex ai-center" v-if="screen=='end'">
+        </div>
+        <div class="end flex ai-center" v-if="screen=='end'">
           <div class="photo middle">
               <img v-bind:src="resultImage" v-bind:alt="resultTitle">
           </div>
           <div class="description">
-              <h1>{{ resultTitle }} !</h1>
+              <h1>{{ resultTitle }}</h1>
               <p>{{ resultDescription }}</p>
+              <p style="margin-top: 10px;">{{ totalPoint }} Doğru yaptın.</p>
               <p class="note">NOT = Sonuç yüksek ihtimalle doğru cevap vermiyor, zaten verse katman yapımı olmazdı.</p>
               <router-link to="/testler" class="middle">Testlere Dön</router-link>
           </div>
       </div>
-  </div>
+    </div>  
 </template>
 
 <script>
-import test from './../jsons/hangi-katman-karakterisin.json';
+import test from './../jsons/batuhanmntyi-ne-kadar-tanıyorsun.json';
 export default {
-    name:'hangi-katman-karakterisin',
+    name:'batuhanmntyi-ne-kadar-tanıyorsun',
     data(){
-        return {
-            start:false,
+        return{
+            screen:'start',
+            TestTitle:'',
+            questionTurn:0,
+            questionTitle:'',
+            checked:true,
             questions:[],
             answers:[],
-            TestTitle:'',
-            questionTitle:'',
-            questionTurn:0,
             optionA:'',
             optionB:'',
             optionC:'',
             optionD:'',
-            checked:true,
-            screen:'start',
             resultTitle:'',
             resultDescription:'',
             resultImage:'',
@@ -73,7 +73,7 @@ export default {
         this.questions = test.questions;
         
         this.refreshQuestion();
-        document.title = "Hangi Katman Karakterisin? - KatmanNeDio?";
+        document.title = "BatuhanMNT'yi Ne Kadar Tanıyorsun? - KatmanNeDio?";
     },
     methods:{
         refreshQuestion(){
@@ -97,11 +97,7 @@ export default {
                 this.theEnd();
             }
         },
-        changeNextButton(value){
-            this.checked = value;
-        },
         unCheckButtons(){
-
             let list = document.getElementsByClassName('questionButtons');
             let item;
             for(item of list)
@@ -120,79 +116,35 @@ export default {
                 }
             }
         },
+        changeNextButton(value){
+            this.checked = value;
+        },
         calculatePoints(){
             for(let i=0; i<this.answers.length; i++)
             {
-                let choose = String(this.answers[i]);
-                if(choose=="optionA")
+                if(test.questions[i].trueOption==this.answers[i])
                 {
-                    let item;
-                    for(item of this.questions)
-                    {
-                        if(item.id==(i+1))
-                        {
-                            this.totalPoint += item.optionAvalue;
-                        }
-                    }
-                }
-                else if(choose=="optionB")
-                {
-                    let item;
-                    for(item of this.questions)
-                    {
-                        if(item.id==(i+1))
-                        {
-                            this.totalPoint += item.optionBvalue;
-                        }
-                    }
-                }
-                else if(choose=="optionC")
-                {
-                    let item;
-                    for(item of this.questions)
-                    {
-                        if(item.id==(i+1))
-                        {
-                            this.totalPoint += item.optionCvalue;
-                        }
-                    }
-                }
-                else if(choose=="optionD")
-                {
-                    let item;
-                    for(item of this.questions)
-                    {
-                        if(item.id==(i+1))
-                        {
-                            this.totalPoint += item.optionDvalue;
-                        }
-                    }
+                    this.totalPoint++;
                 }
             }
         },
         theEnd(){
-            let persons = test.results;
             let index;
-            if(this.totalPoint<=100)
+            if(this.totalPoint>=0 && this.totalPoint<=3)
             {
                 index=0;
             }
-            else if(this.totalPoint>=105 && this.totalPoint<135)
+            else if(this.totalPoint>=4 && this.totalPoint<=7)
             {
                 index=1;
             }
-            else if(this.totalPoint>=135 && this.totalPoint <165)
+            else if(this.totalPoint>=8 && this.totalPoint<=10)
             {
                 index=2;
             }
-            else if(this.totalPoint>=165)
-            {
-                index=3;
-            }
-
-            this.resultTitle = persons[index].person;
-            this.resultDescription = persons[index].description;
-            this.resultImage = persons[index].image;
+            this.resultTitle = test.result[index].title;
+            this.resultDescription = test.result[index].description;
+            this.resultImage = test.result[index].image;
         }
     }
 }
@@ -200,9 +152,46 @@ export default {
 
 <style scoped>
 
-.container {
+.main-container {
     width: 100%;
     height: 100vh;
+}
+
+.start {
+    width: 450px;
+    height: auto;
+    padding: 25px;
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
+    background-color: rgb(228, 228, 228);
+    flex-direction: column;
+    align-items: center;
+}
+
+.start h1 {
+    text-align: center;
+    font-family: 'Mulish' , sans-serif;
+    margin-bottom: 20px;
+}
+
+.start p {
+    font-family: 'Poppins' , sans-serif;
+    margin-bottom: 10px;
+}
+
+.start button {
+    width: 100%;
+    height: 40px;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Poppins' , sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.start button:hover {
+    background-color: #6b63ffda;
 }
 
 .question {
@@ -296,42 +285,6 @@ export default {
     background-color: #9e99ff !important;
     color: black !important;
     cursor: no-drop !important;
-}
-
-.start {
-    width: 450px;
-    padding: 25px;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
-    background-color: rgb(228, 228, 228);
-    flex-direction: column;
-    align-items: center;
-}
-
-.start h1 {
-    font-family: 'Mulish' , sans-serif;
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.start p {
-    font-family: 'Poppins' , sans-serif;
-    margin-bottom: 15px;
-}
-
-.start button {
-    width: 100%;
-    height: 40px;
-    background-color: #6c63ff;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-family: 'Poppins' , sans-serif;
-    color: white;
-    cursor: pointer;
-}
-
-.start button:hover {
-    background-color: #6b63ffda;
 }
 
 .end {

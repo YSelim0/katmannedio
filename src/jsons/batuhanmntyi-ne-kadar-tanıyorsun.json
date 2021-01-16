@@ -1,0 +1,112 @@
+{
+    "title":"BatuhanMNT'yi Ne Kadar Tanıyorsun?",
+    "questions":[
+        {
+            "id":1,
+            "questionText":"BatuhanMNT hangi okulda okuyor?",
+            "optionA":"Anadolu Üniversitesi",
+            "optionB":"Bilkent Üniversitesi",
+            "optionC":"İstanbul Teknik Üniversitesi",
+            "optionD":"Ankara Üniversitesi",
+            "trueOption":"optionB"
+        },
+        {
+            "id":2,
+            "questionText":"BatuhanMNT kaç yaşında?",
+            "optionA":"22",
+            "optionB":"23",
+            "optionC":"24",
+            "optionD":"25",
+            "trueOption":"optionD"
+        },
+        {
+            "id":3,
+            "questionText":"BatuhanMNT hangi lakap ile anılır?",
+            "optionA":"Kıl Yumağı",
+            "optionB":"Erkek!",
+            "optionC":"Baco?",
+            "optionD":"Arda Turan",
+            "trueOption":"optionA"
+        },
+        {
+            "id":4,
+            "questionText":"BatuhanMNT'nin okuduğu bölüm nedir?",
+            "optionA":"Jeoloji",
+            "optionB":"Yabancı Dil",
+            "optionC":"Bilişim Sistemleri",
+            "optionD":"İşletme",
+            "trueOption":"optionC"
+        },
+        {
+            "id":5,
+            "questionText":"BatuhanMNT'nin arabasının markası nedir?",
+            "optionA":"Fiat",
+            "optionB":"Opel",
+            "optionC":"Mercedes",
+            "optionD":"Audi",
+            "trueOption":"optionD"
+        },
+        {
+            "id":6,
+            "questionText":"BatuhanMNT hangi şehirde yaşıyor?",
+            "optionA":"İstanbul",
+            "optionB":"Ankara",
+            "optionC":"İzmir",
+            "optionD":"Kocaeli",
+            "trueOption":"optionB"
+        },
+        {
+            "id":7,
+            "questionText":"BatuhanMNT'nin eski nicki?",
+            "optionA":"Batuhan89gs",
+            "optionB":"BatuhanSinemalar",
+            "optionC":"Batuhan53",
+            "optionD":"Batuhan840",
+            "trueOption":"optionD"
+        },
+        {
+            "id":8,
+            "questionText":"BatuhanMNT'nin en sevdiği futbolcu?",
+            "optionA":"Arda Turan",
+            "optionB":"Mbappe",
+            "optionC":"Falcao",
+            "optionD":"Mesut Özil",
+            "trueOption":"optionA"
+        },
+        {
+            "id":9,
+            "questionText":"BatuhanMNT'nin en sevdiği oyun?",
+            "optionA":"a",
+            "optionB":"b",
+            "optionC":"",
+            "optionD":"d",
+            "trueOption":"optionC"
+        },
+        {
+            "id":10,
+            "questionText":"BatuhanMNT'nin güncel twitch takipçi sayısı?",
+            "optionA":"18 Bin",
+            "optionB":"22 Bin",
+            "optionC":"25 Bin",
+            "optionD":"27 Bin",
+            "trueOption":"optionB"
+        }
+    ],
+    "result":[
+        {
+            "title":"BatuhanMNT'yi Neredeyse Hiç Tanımıyorsun!!",
+            "description":"Aman Tanrım... Dünya üzerinde böyle insanlar gerçektende varmış. Bence bu yayıncıya bir şans vermelisin. Kendisi süper bir yayıncı. Umarım ilerde sende BatuhanMNT'yi ezbere bilen biri olursun...",
+            "image":"https://batuhanmnt.netlify.app/img/mnt-background.png"
+        },
+        {
+            "title":"BatuhanMNT'yi Biraz Daha Tanıman Gerek..",
+            "description":"Tamamen tanımıyorsun denemez aslında , ama tanıyorsunda denilemez. Biraz daha çalışman gerek. Ama birgün inanıyorumki 10 doğruyla MNT'yi en iyi tanıyan kişi olacaksın!",
+            "image":"https://batuhanmnt.netlify.app/img/mnt-background.png"
+        },
+        {
+            "title":"BatuhanMNT'yi Ezbere Biliyorsun!!!",
+            "description":"Dostum sen bu adama aşık olmalısın -ki her şeyini ezberlemişsin. Bundan daha iyi bir mertebe olamazdı... Tebrikler! MNT'nin en iyi takipçilerindensin!!!!",
+            "image":"https://batuhanmnt.netlify.app/img/poncik-mnt.PNG"
+        }
+    ]
+}

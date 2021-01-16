@@ -1,8 +1,10 @@
 <template>
   <div class="main-container jc-center">
       <div class="container">
-          <h1><span>•</span>Ekip<span>•</span></h1>
-          <p>Yapımda Emeği Geçen Herkes.</p>
+          <div class="title">
+            <h1 class="middle"><span>•</span>Ekip<span>•</span></h1>
+            <p>Yapımda Emeği Geçen Herkes.</p>
+          </div>
           <div class="row jc-space ai-center" v-for="(item , index) in crew" v-bind:key="index">
               <h2>{{ item.username }}</h2>
               <p>{{ item.role }}</p>
@@ -22,6 +24,7 @@ export default {
     },
     created(){
         this.crew = ekip.crew;
+        document.title = "Ekip - KatmanNeDio?";
     },
     methods:{
 
@@ -43,19 +46,21 @@ export default {
     background-color: rgb(228, 228, 228);
 }
 
-.container > h1 {
-    font-size: 65px;
-    font-family: 'Mulish' , sans-serif;
-    display: flex;
-    align-items: center;
+.title {
+    text-align: center;
 }
 
-.container > h1 span {
+.title h1 {
+    font-size: 65px;
+    font-family: 'Mulish' , sans-serif;
+}
+
+.title h1 span {
     font-size: 30px;
     margin: 0px 10px;
 }
 
-.container > p {
+.title p {
     font-family: 'Poppins' , sans-serif;
     margin-bottom: 20px;
 }

@@ -17,6 +17,10 @@
           </div>
 
       </div>
+      <div class="title">
+          <h1>Daha Fazla İçerikler Yakında...</h1>
+          <p>Herhangi bir konuda fikriniz olursa Discord: Heaven#7091</p>
+      </div>
   </div>
 </template>
 
@@ -53,6 +57,11 @@ export default {
 .title h1 {
     font-family: 'Mulish' , sans-serif;
     font-size: 50px;
+}
+
+.title p {
+    font-size: 17px;
+    font-family: 'Poppins' , sans-serif;
 }
 
 .tests {
