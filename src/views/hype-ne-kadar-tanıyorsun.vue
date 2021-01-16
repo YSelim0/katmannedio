@@ -45,9 +45,9 @@
 </template>
 
 <script>
-import test from './../jsons/batuhanmntyi-ne-kadar-tanıyorsun.json';
+import test from './../jsons/hype-ne-kadar-tanıyorsun.json';
 export default {
-    name:'batuhanmntyi-ne-kadar-tanıyorsun',
+    name:'hype-ne-kadar-tanıyorsun',
     data(){
         return{
             screen:'start',
@@ -72,7 +72,7 @@ export default {
         this.questions = test.questions;
         
         this.refreshQuestion();
-        document.title = "BatuhanMNT'yi Ne Kadar Tanıyorsun? - KatmanNeDio?";
+        document.title = "Hype'ı Ne Kadar Tanıyorsun? - KatmanNeDio?";
     },
     methods:{
         refreshQuestion(){

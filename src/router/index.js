@@ -5,6 +5,7 @@ import Testler from '../views/Testler.vue'
 import hangiKatmanKarakterisin from '../views/hangi-katman-karakterisin.vue'
 import Ekip from '../views/Ekip.vue'
 import batuhanmntyiNeKadarTanıyorsun from '../views/batuhanmntyi-ne-kadar-tanıyorsun.vue'
+import hypeNeKadarTanıyorsun from '../views/hype-ne-kadar-tanıyorsun.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/batuhanmntyi-ne-kadar-tanıyorsun',
     name: 'batuhanmntyi-ne-kadar-tanıyorsun',
     component: batuhanmntyiNeKadarTanıyorsun
+  },
+  {
+    path: '/hype-ne-kadar-tanıyorsun',
+    name: 'hype-ne-kadar-tanıyorsun',
+    component: hypeNeKadarTanıyorsun
   }
 ]
 

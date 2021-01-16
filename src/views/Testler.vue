@@ -18,7 +18,7 @@
 
       </div>
       <div class="title">
-          <h1>Daha Fazla İçerikler Yakında...</h1>
+          <h1>Daha Fazla İçerik Yakında...</h1>
           <p>Herhangi bir konuda fikriniz olursa Discord: Heaven#7091</p>
       </div>
   </div>

@@ -4,13 +4,19 @@
             "title":"Hangi Katman Karakterisin?",
             "date":"15.01.2021",
             "slug":"hangi-katman-karakterisin",
-            "imageUrl":"https://cdn.discordapp.com/attachments/487249425362583552/798307118217560076/Photo_1610401539426.jpg"
+            "imageUrl":"https://cdn.discordapp.com/attachments/741666254942896239/799849217647575060/IMG_20210116_065156.png"
         },
         {
             "title":"BatuhanMNT'yi Ne Kadar Tanıyorsun?",
             "date":"16.01.2021",
             "slug":"batuhanmntyi-ne-kadar-tanıyorsun",
             "imageUrl":"https://batuhanmnt.netlify.app/img/poncik-mnt.PNG"
+        },
+        {
+            "title":"Hype'ı Ne Kadar Tanıyorsun?",
+            "date":"17.01.2021",
+            "slug":"hype-ne-kadar-tanıyorsun",
+            "imageUrl":"https://cdn.discordapp.com/attachments/741666254942896239/799856361076555816/unknown.png"
         }
     ]
 }

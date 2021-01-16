@@ -3,7 +3,7 @@
       <div class="container">
           <div class="title">
             <h1 class="middle"><span>•</span>Ekip<span>•</span></h1>
-            <p>Yapımda Emeği Geçen Herkes.</p>
+            <p>Yani Emeği Geçen Herkes.</p>
           </div>
           <div class="row jc-space ai-center" v-for="(item , index) in crew" v-bind:key="index">
               <h2>{{ item.username }}</h2>

@@ -1,0 +1,112 @@
+{
+    "title":"Hype'ı Ne Kadar Tanıyorsun?",
+    "questions":[
+        {
+            "id":1,
+            "questionText":"Çağrı'nın lakabı hangisidir?",
+            "optionA":"Bacoo",
+            "optionB":"Kegri",
+            "optionC":"Mösyö",
+            "optionD":"Kegristo",
+            "trueOption":"optionB"
+        },
+        {
+            "id":2,
+            "questionText":"Çağrı'nın arabasının markası nedir?",
+            "optionA":"Fiat",
+            "optionB":"Ford",
+            "optionC":"Volkswagen",
+            "optionD":"Mercedes",
+            "trueOption":"optionC"
+        },
+        {
+            "id":3,
+            "questionText":"Çağrı hangi semtte oturuyor?",
+            "optionA":"Kağıthane",
+            "optionB":"Bağcılar",
+            "optionC":"Ataşehir",
+            "optionD":"Beylikdüzü",
+            "trueOption":"optionA"
+        },
+        {
+            "id":4,
+            "questionText":"Çağrı'nın eski Twitch nicki?",
+            "optionA":"Kegri",
+            "optionB":"AynıTiyatrolar",
+            "optionC":"MosyoKegri",
+            "optionD":"AynıSinemalar",
+            "trueOption":"optionD"
+        },
+        {
+            "id":5,
+            "questionText":"Çağrı'nın en iyi olduğu oyun?",
+            "optionA":"Counter-Strike: Global Offensive",
+            "optionB":"Pummel Party",
+            "optionC":"Valorant",
+            "optionD":"Rust",
+            "trueOption":"optionB"
+        },
+        {
+            "id":6,
+            "questionText":"Çağrı kaç yaşındandır?",
+            "optionA":"25",
+            "optionB":"26",
+            "optionC":"31",
+            "optionD":"30",
+            "trueOption":"optionD"
+        },
+        {
+            "id":7,
+            "questionText":"Çağrı'nın yayıncılık dışındaki mesleği?",
+            "optionA":"Yazılımcı",
+            "optionB":"Su Arıtmacısı",
+            "optionC":"Müzisyen",
+            "optionD":"Dolmuşcu",
+            "trueOption":"optionA"
+        },
+        {
+            "id":8,
+            "questionText":"Çağrı'nın en sevdiği Hayvan?",
+            "optionA":"Köpek",
+            "optionB":"Rakun",
+            "optionC":"At",
+            "optionD":"Kedi",
+            "trueOption":"optionC"
+        },
+        {
+            "id":9,
+            "questionText":"Çağrı'nın evini toparlayıp temizleyen kişi kimdir?",
+            "optionA":"Batuhan",
+            "optionB":"Serkan",
+            "optionC":"Gugucan",
+            "optionD":"Kavun",
+            "trueOption":"optionB"
+        },
+        {
+            "id":10,
+            "questionText":"Çağrı'nın bağlı olduğu ekip hangisi?",
+            "optionA":"Bigbosslayf",
+            "optionB":"Rekkitz",
+            "optionC":"Bosslayf",
+            "optionD":"TKT",
+            "trueOption":"optionA"
+        }
+    ],
+    "result":[
+        {
+            "title":"Biraz Daha Tanıman Gerek...",
+            "description":"Belli ki Çağrı'yı daha yeni tanıyorsun veya o kadar da takip etmiyorsun. Bir şans vermeni öneririm. Eğer 30-40 dakika izlersen bile seni elbet 1-2 şakasıyla yakalar ;)",
+            "image":"https://cdn.discordapp.com/attachments/487249425362583552/799778701222740018/Screenshot_20210116_021414.jpg"
+        },
+        {
+            "title":"Çağrıyı Yeterince Tanıyorsun.",
+            "description":"Çağrı hakkında normal bir izleyici kadar bilgin var. Yayınlarda dönen makaralardan az çokta haberin var. Ama öyle düşünüyorum ki sen instagramını takip etmiyorsun. instagram.com/aynisinemalar kıps;)",
+            "image":"https://cdn.discordapp.com/avatars/503128271538356225/7aac738c630cd675cb97c79d6d906cb2.webp?size=1024"
+        },
+        {
+            "title":"Sen Bu Adamın Manyağı Olmuşsun!!",
+            "description":"Öyle tahmin ediyorum ki Çağrı'nın hiçbir yayınını kaçırmıyorsun. Yayınları geçtim instagram, twitter heryerden takip ediyorsun. Çağrı'ya aşık olabilir misin acaba?",
+            "image":"https://cdn.discordapp.com/attachments/741666254942896239/799866162368348160/unknown.png"
+        }
+    ]
+}
