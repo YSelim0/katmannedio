@@ -5,7 +5,7 @@
       </div>
       <div class="tests middle">
 
-          <div class="item animate__animated animate__fadeInUp" v-for="(item , index) in tests" v-bind:key="index" id="deneme">
+          <div class="item animate__animated animate__fadeInUp" v-for="(item , index) in tests" v-bind:key="index" id="deneme" v-bind:style="'animation-delay:'+(index*0.1)+'s;'">
               <img v-bind:src="item.imageUrl" v-bind:alt="item.slug">
               <div class="description">
                   <h1>{{ item.title }}</h1>
@@ -67,6 +67,7 @@ export default {
 .tests {
     width: 100%;
     padding: 50px 0px;
+    flex-wrap: wrap;
 }
 
 .item {

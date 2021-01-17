@@ -16,7 +16,7 @@
                         <router-link to="/emegi-gecenler">Emeği Geçenler</router-link>
                     </li>
                     <li>
-                        <a href="http://aynisinemalar.com/" target="blank">Hype</a>
+                        <a href="http://aynisinemalar.com/" target="blank">Hype <i class="fas fa-external-link-alt"></i></a>
                     </li>
                 </ul>
             </div>

@@ -30,7 +30,7 @@
               </button>
           </div>
         </div>
-        <div class="end flex ai-center" v-if="screen=='end'">
+        <div class="end flex ai-center animate__animated animate__tada" v-if="screen=='end'">
           <div class="photo middle">
               <img v-bind:src="resultImage" v-bind:alt="resultTitle">
           </div>

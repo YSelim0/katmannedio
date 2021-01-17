@@ -45,6 +45,11 @@ const routes = [
     path: '/nuribeni-ne-kadar-tanıyorsun',
     name: 'nuribeni-ne-kadar-tanıyorsun',
     component: NuribeniNeKadarTanıyorsun
+  },
+  {
+    path: '*',
+    name: 'notFound',
+    component: Home
   }
 ]
 

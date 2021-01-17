@@ -5,9 +5,12 @@
             <h1 class="middle"><span>•</span>Emeği Geçenler<span>•</span></h1>
             <p>Yani Katkıda Bulunan Herkes.</p>
           </div>
-          <div class="row jc-space ai-center animate__animated animate__bounceInLeft" v-for="(item , index) in crew" v-bind:key="index">
-              <h2>{{ item.username }}</h2>
-              <p>{{ item.role }}</p>
+          <div class="row animate__animated animate__bounceInLeft" v-for="(item , index) in crew" v-bind:key="index" v-bind:style="'animation-delay:'+(index*0.1)+'s;'">
+              <div class="row-line jc-space ai-center">
+                <h2>{{ item.username }}</h2>
+                <p>{{ item.role }}</p>
+              </div>
+              <div class="line"></div>
           </div>
       </div>
   </div>
@@ -67,7 +70,6 @@ export default {
 .row {
     width: 100%;
     height: 35px;
-    border-bottom: 1px solid rgb(185, 185, 185);
     margin: 10px 0px;
 }
 
@@ -79,6 +81,17 @@ export default {
 .row p {
     font-size: 20px;
     font-family: 'Poppins' , sans-serif;
+}
+
+.row .row-line {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.row .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(185, 185, 185);
 }
 
 </style>
