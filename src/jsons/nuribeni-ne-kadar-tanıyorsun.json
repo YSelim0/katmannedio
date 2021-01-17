@@ -1,0 +1,112 @@
+{
+    "title":"Nuriben'i Ne Kadar Tanıyorsun?",
+    "questions":[
+        {
+            "id":1,
+            "questionText":"Nuri Çağrı'ya ne diye seslenir?",
+            "optionA":"Abim",
+            "optionB":"Kral",
+            "optionC":"Usta",
+            "optionD":"Kankiğğ",
+            "trueOption":"optionC"
+        },
+        {
+            "id":2,
+            "questionText":"Nuri hangi şehirde okuyor?",
+            "optionA":"İzmir",
+            "optionB":"Kocaeli",
+            "optionC":"Ankara",
+            "optionD":"İstanbul",
+            "trueOption":"optionA"
+        },
+        {
+            "id":3,
+            "questionText":"Nuri'nin memleketi neresidir?",
+            "optionA":"İzmir",
+            "optionB":"Kocaeli",
+            "optionC":"Ankara",
+            "optionD":"İstanbul",
+            "trueOption":"optionB"
+        },
+        {
+            "id":4,
+            "questionText":"Nuri'nin en sevdiği oyun?",
+            "optionA":"",
+            "optionB":"",
+            "optionC":"",
+            "optionD":"",
+            "trueOption":"optionC"
+        },
+        {
+            "id":5,
+            "questionText":"Nuri'nin ev arkadaşının ismi?",
+            "optionA":"Çağrı",
+            "optionB":"Batuhan",
+            "optionC":"Hasan",
+            "optionD":"Kerem",
+            "trueOption":"optionD"
+        },
+        {
+            "id":6,
+            "questionText":"",
+            "optionA":"",
+            "optionB":"",
+            "optionC":"",
+            "optionD":"",
+            "trueOption":""
+        },
+        {
+            "id":7,
+            "questionText":"",
+            "optionA":"",
+            "optionB":"",
+            "optionC":"",
+            "optionD":"",
+            "trueOption":""
+        },
+        {
+            "id":8,
+            "questionText":"",
+            "optionA":"",
+            "optionB":"",
+            "optionC":"",
+            "optionD":"",
+            "trueOption":""
+        },
+        {
+            "id":9,
+            "questionText":"Nuri'nin içmeyi en sevdiği meşrubat?",
+            "optionA":"Çay",
+            "optionB":"Kahve",
+            "optionC":"Kola",
+            "optionD":"Enerji İçeceği",
+            "trueOption":"optionA"
+        },
+        {
+            "id":10,
+            "questionText":"",
+            "optionA":"",
+            "optionB":"",
+            "optionC":"",
+            "optionD":"",
+            "trueOption":""
+        }
+    ],
+    "result":[
+        {
+            "title":"",
+            "description":"",
+            "image":""
+        },
+        {
+            "title":"",
+            "description":"",
+            "image":""
+        },
+        {
+            "title":"",
+            "description":"",
+            "image":""
+        }
+    ]
+}

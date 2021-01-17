@@ -6,11 +6,15 @@
         },
         {
             "username":"Radres",
-            "role":"Yazar"
+            "role":"Test Sonu Yazısı"
         },
         {
             "username":"Kapişşş",
-            "role":"Yazar"
+            "role":"Test Sonu Yazısı"
+        },
+        {
+            "username":"Aleynn",
+            "role":"Görsel"
         }
     ]
 }

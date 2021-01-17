@@ -76,10 +76,10 @@
         {
             "id":9,
             "questionText":"BatuhanMNT'nin en sevdiği oyun?",
-            "optionA":"a",
-            "optionB":"b",
-            "optionC":"",
-            "optionD":"d",
+            "optionA":"Escape From Tarkov",
+            "optionB":"Counter Strike: Global Offensive",
+            "optionC":"Valorant",
+            "optionD":"Fortnite",
             "trueOption":"optionC"
         },
         {

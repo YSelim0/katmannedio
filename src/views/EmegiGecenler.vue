@@ -2,10 +2,10 @@
   <div class="main-container jc-center">
       <div class="container">
           <div class="title">
-            <h1 class="middle"><span>•</span>Ekip<span>•</span></h1>
-            <p>Yani Emeği Geçen Herkes.</p>
+            <h1 class="middle"><span>•</span>Emeği Geçenler<span>•</span></h1>
+            <p>Yani Katkıda Bulunan Herkes.</p>
           </div>
-          <div class="row jc-space ai-center" v-for="(item , index) in crew" v-bind:key="index">
+          <div class="row jc-space ai-center animate__animated animate__bounceInLeft" v-for="(item , index) in crew" v-bind:key="index">
               <h2>{{ item.username }}</h2>
               <p>{{ item.role }}</p>
           </div>
@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import ekip from './../jsons/ekip.json';
+import ekip from './../jsons/EmegiGecenler.json';
 export default {
-    name:'Ekip',
+    name:'EmegiGecenler',
     data(){
         return{
             crew:[]
@@ -24,10 +24,9 @@ export default {
     },
     created(){
         this.crew = ekip.crew;
-        document.title = "Ekip - KatmanNeDio?";
+        document.title = "Emeği Geçenler - KatmanNeDio?";
     },
     methods:{
-
     }
 }
 </script>

@@ -5,7 +5,7 @@
       </div>
       <div class="tests middle">
 
-          <div class="item" v-for="(item , index) in tests" v-bind:key="index">
+          <div class="item animate__animated animate__fadeInUp" v-for="(item , index) in tests" v-bind:key="index" id="deneme">
               <img v-bind:src="item.imageUrl" v-bind:alt="item.slug">
               <div class="description">
                   <h1>{{ item.title }}</h1>
@@ -40,7 +40,7 @@ export default {
         this.tests = tests.tests;
     },
     methods:{
-
+        
     }
 }
 </script>

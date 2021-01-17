@@ -13,7 +13,7 @@
                         <router-link to="/testler">Testler</router-link>
                     </li>
                     <li>
-                        <router-link to="/ekip">Ekip</router-link>
+                        <router-link to="/emegi-gecenler">Emeği Geçenler</router-link>
                     </li>
                     <li>
                         <a href="http://aynisinemalar.com/" target="blank">Hype</a>

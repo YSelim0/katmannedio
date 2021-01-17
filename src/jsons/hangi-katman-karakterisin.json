@@ -99,7 +99,7 @@
         },
         {
             "id":9,
-            "questionText":"Oyunların .....-ni kesinlikle benim!",
+            "questionText":"Oyunların .....-sı kesinlikle benim!",
             "optionA":"Beyini",
             "optionAvalue":10,
             "optionB":"Şakacısı",

@@ -11,7 +11,7 @@
       </div>
       <div class="products middle">
 
-        <div class="card">
+        <div class="card animate__animated animate__fadeIn">
           <div class="card-header">
             <img src="./../assets/question.svg" alt="question">
             <h4>Testler</h4>
@@ -24,22 +24,22 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card animate__animated animate__fadeIn">
           <div class="card-header">
             <img src="./../assets/crew.svg" alt="crew">
-            <h4>Ekip</h4>
+            <h4>Emeği Geçenler</h4>
           </div>
           <div class="card-body">
-            <p>Bütün yapımda emeği geçen herkesi bu kısımdan takip edebilirsiniz.</p>
+            <p>Bütün bu yapıma katkıda herkesi bu kısımdan takip edebilirsiniz.</p>
           </div>
           <div class="card-footer">
-            <router-link to="/ekip" class="middle">Gözat</router-link>
+            <router-link to="/emegi-gecenler" class="middle">Gözat</router-link>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card animate__animated animate__fadeIn">
           <div class="card-header">
-            <img src="./../assets/hype.svg" alt="crew">
+            <img src="./../assets/hype.svg" alt="hype">
             <h4>Hype</h4>
           </div>
           <div class="card-body">
