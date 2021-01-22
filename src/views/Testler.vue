@@ -19,7 +19,7 @@
       </div>
       <div class="title">
           <h1>Daha Fazla İçerik Yakında...</h1>
-          <p>Herhangi bir konuda fikriniz olursa Discord: Heaven#7091</p>
+          <p>Herhangi bir konuda fikriniz olursa Discord: <span onclick="window.open('https://yavuzselim.netlify.app/' , '_blank')">Heaven#7091</span></p>
       </div>
   </div>
 </template>
@@ -62,6 +62,16 @@ export default {
 .title p {
     font-size: 17px;
     font-family: 'Poppins' , sans-serif;
+}
+
+.title p span {
+    padding: 2px;
+}
+
+.title p span:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .tests {

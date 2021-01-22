@@ -2,7 +2,9 @@
     <div id="App">
         <header class="ai-center jc-space" id="header">
             <div class="logo">
-                <img src="./assets/katmannedioLogo.png" alt="logo">
+                <router-link to="/">
+                    <img src="./assets/katmannedioLogo.png" alt="logo">
+                </router-link>
             </div>
             <div class="nav">
                 <ul class="flex">
@@ -16,7 +18,7 @@
                         <router-link to="/emegi-gecenler">Emeği Geçenler</router-link>
                     </li>
                     <li>
-                        <a href="http://aynisinemalar.com/" target="blank">Hype <i class="fas fa-external-link-alt"></i></a>
+                        <a href="http://aynisinemalar.com/" target="_blank">Hype <i class="fas fa-external-link-alt"></i></a>
                     </li>
                 </ul>
             </div>

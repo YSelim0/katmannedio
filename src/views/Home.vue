@@ -83,9 +83,10 @@ export default {
 
 .welcome {
   width: 100%;
-  height: 400px;
-  background-image: url('https://images.pexels.com/photos/585759/pexels-photo-585759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-size: 100% 100%;
+  padding: 50px 0px;
+  background-image: url('https://images.pexels.com/photos/747101/pexels-photo-747101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  /*background-image: url('https://images.pexels.com/photos/23273/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
+  background-size: 100% 350%;
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -4,9 +4,9 @@ import Home from '../views/Home.vue'
 import Testler from '../views/Testler.vue'
 import hangiKatmanKarakterisin from '../views/hangi-katman-karakterisin.vue'
 import EmegiGecenler from '../views/EmegiGecenler.vue'
-import batuhanmntyiNeKadarTanıyorsun from '../views/batuhanmntyi-ne-kadar-tanıyorsun.vue'
-import hypeNeKadarTanıyorsun from '../views/hype-ne-kadar-tanıyorsun.vue'
-import NuribeniNeKadarTanıyorsun from '../views/nuribeni-ne-kadar-tanıyorsun.vue'
+import batuhanmntyiNeKadarTaniyorsun from '../views/batuhanmntyi-ne-kadar-taniyorsun.vue'
+import hypeNeKadarTaniyorsun from '../views/hype-ne-kadar-taniyorsun.vue'
+import NuribeniNeKadarTaniyorsun from '../views/nuribeni-ne-kadar-taniyorsun.vue'
 
 Vue.use(VueRouter)
 
@@ -32,24 +32,19 @@ const routes = [
     component: EmegiGecenler
   },
   {
-    path: '/batuhanmntyi-ne-kadar-tanıyorsun',
-    name: 'batuhanmntyi-ne-kadar-tanıyorsun',
-    component: batuhanmntyiNeKadarTanıyorsun
+    path: '/batuhanmntyi-ne-kadar-taniyorsun',
+    name: 'batuhanmntyi-ne-kadar-taniyorsun',
+    component: batuhanmntyiNeKadarTaniyorsun
   },
   {
-    path: '/hype-ne-kadar-tanıyorsun',
-    name: 'hype-ne-kadar-tanıyorsun',
-    component: hypeNeKadarTanıyorsun
+    path: '/hype-ne-kadar-taniyorsun',
+    name: 'hype-ne-kadar-taniyorsun',
+    component: hypeNeKadarTaniyorsun
   },
   {
-    path: '/nuribeni-ne-kadar-tanıyorsun',
-    name: 'nuribeni-ne-kadar-tanıyorsun',
-    component: NuribeniNeKadarTanıyorsun
-  },
-  {
-    path: '*',
-    name: 'notFound',
-    component: Home
+    path: '/nuribeni-ne-kadar-taniyorsun',
+    name: 'nuribeni-ne-kadar-taniyorsun',
+    component: NuribeniNeKadarTaniyorsun
   }
 ]
 
