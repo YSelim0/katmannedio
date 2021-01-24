@@ -1,5 +1,5 @@
 <template>
-    <div class="main-container middle">
+    <div class="main-container middle animate__animated animate__fadeInDown">
         <div class="start flex" v-if="screen=='start'">
             <h1>{{ TestTitle }}</h1>
             <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
@@ -304,6 +304,7 @@ export default {
     border-radius: 7px;
     font-family: 'Poppins' , sans-serif;
     letter-spacing: 1px;
+    user-select: none;
 }
 
 .enable {

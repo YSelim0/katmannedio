@@ -17,7 +17,7 @@
           </div>
 
       </div>
-      <div class="title">
+      <div class="title animate__animated animate__fadeIn">
           <h1>Daha Fazla İçerik Yakında...</h1>
           <p>Herhangi bir konuda fikriniz olursa Discord: <span onclick="window.open('https://yavuzselim.netlify.app/' , '_blank')">Heaven#7091</span></p>
       </div>
@@ -52,6 +52,7 @@ export default {
     text-align: center;
     padding-top: 25px;
     margin-bottom: 25px;
+    animation-duration: 2s;
 }
 
 .title h1 {
@@ -84,6 +85,11 @@ export default {
     width: 350px;
     box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.246);
     margin: 20px;
+    transition: all .3s ease;
+}
+
+.item:hover {
+    margin-top: -20px;
 }
 
 .item img {
