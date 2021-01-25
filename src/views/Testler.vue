@@ -148,6 +148,7 @@ export default {
     left: 0px;
     width: 100%;
     text-align: center;
+    font-size: 20px;
 }
 
 </style>

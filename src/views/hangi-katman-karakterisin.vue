@@ -1,12 +1,23 @@
 <template>
   <div class="container middle animate__animated animate__fadeInDown">
+      <div class="coming-soon middle" v-if="screen='comingSoon'">
+          <h1>Bu İçerik Yakında...</h1>
+          <p>Beklemede Kalın.</p>
+      </div>
       <div class="start flex" v-if="screen=='start'">
           <h1>{{ TestTitle }}</h1>
           <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
           <p>Başlamak İçin 'Başla' Tuşun Tıklayın.</p>
           <button class="middle" @click="startTest()">Başla</button>
       </div>
-      <div class="question" v-if="screen=='question'">
+      <div class="switch-screen middle animate__animated animate__fadeIn" v-if="screen=='switchScreen'" v-bind:style="'background-color:'+switchScreenColor+';'">
+            <h1>{{switchScreenTimer}}</h1>
+            <audio autoplay="true" controls="true" id="switchTimerAudio" style="display: none;">
+                <source src="./../assets/ticktack.mp3" type="audio/mpeg">
+                <source src="./../assets/ticktack.mp3" type="audio/ogg">
+            </audio>
+        </div>
+      <div class="question animate__animated animate__zoomInDown" v-if="screen=='question'">
           <div class="title">
               <h1>{{ TestTitle }}</h1>
           </div>
@@ -63,7 +74,7 @@ export default {
             optionC:'',
             optionD:'',
             checked:true,
-            screen:'start',
+            screen:'comingSoon',
             resultTitle:'',
             resultDescription:'',
             resultImage:'',
@@ -72,6 +83,8 @@ export default {
             timeMinuteValue:0,
             counter:null,
             lastTime:'',
+            switchScreenTimer:0,
+            switchScreenColor:'#4595d0',
         }
     },
     created(){
@@ -202,8 +215,21 @@ export default {
             this.resultImage = persons[index].image;
         },
         startTest(){
-            this.screen='question';
-            this.counter = setInterval(this.timeCounter,1000)
+            this.screen='switchScreen';
+            this.switchScreenTimer=3;
+            this.switchScreenColor="#746cff";
+            setTimeout(() => {
+                this.switchScreenTimer=2;
+                this.switchScreenColor="#3a2fff";
+            }, 1200);
+            setTimeout(() => {
+                this.switchScreenTimer=1;
+                this.switchScreenColor="#746cff";
+            }, 2200);
+            setTimeout(() => {
+                this.screen='question';
+                this.counter = setInterval(this.timeCounter,1000)
+            }, 3500);
         },
         timeCounter(){
             this.timeSecondValue++;
@@ -406,6 +432,35 @@ export default {
 
 .end .description a:hover {
     background-color: #8f89ff;
+}
+
+.switch-screen {
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+}
+
+.coming-soon {
+    width: 600px;
+    padding: 50px 0px;
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
+    background-color: rgb(228, 228, 228);
+    flex-direction: column;
+}
+
+.coming-soon h1 {
+    font-family: 'Mulish' , sans-serif;
+    font-size: 35px;
+}
+
+.coming-soon p {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 25px;
 }
 
 </style>

@@ -30,11 +30,11 @@
         },
         {
             "id":4,
-            "questionText":"Nuri'nin en sevdiği oyun?",
+            "questionText":"Nuri'nin son zamanlarda en çok oynadığı oyun?",
             "optionA":"Pummel Party",
-            "optionB":"Valorant",
-            "optionC":"",
-            "optionD":"",
+            "optionB":"Table Top Simulator",
+            "optionC":"Valorant",
+            "optionD":"Project Winter",
             "trueOption":"optionC"
         },
         {
@@ -57,21 +57,21 @@
         },
         {
             "id":7,
-            "questionText":"",
-            "optionA":"",
-            "optionB":"",
-            "optionC":"",
-            "optionD":"",
-            "trueOption":""
+            "questionText":"Nuri Çağrı'ya kaç aylık abonedir?",
+            "optionA":"26",
+            "optionB":"23",
+            "optionC":"27",
+            "optionD":"25",
+            "trueOption":"optionA"
         },
         {
             "id":8,
-            "questionText":"",
-            "optionA":"",
-            "optionB":"",
-            "optionC":"",
-            "optionD":"",
-            "trueOption":""
+            "questionText":"Nuri'nin instagram hesabı?",
+            "optionA":"nurullahhucurucu",
+            "optionB":"nurullahucurucuu",
+            "optionC":"nurullahhucuncu",
+            "optionD":"nurullahucuncuu",
+            "trueOption":"optionC"
         },
         {
             "id":9,
@@ -84,29 +84,29 @@
         },
         {
             "id":10,
-            "questionText":"",
-            "optionA":"",
-            "optionB":"",
-            "optionC":"",
-            "optionD":"",
-            "trueOption":""
+            "questionText":"Nuri kaç yaşındadır?",
+            "optionA":"21",
+            "optionB":"22",
+            "optionC":"23",
+            "optionD":"24",
+            "trueOption":"optionD"
         }
     ],
     "result":[
         {
-            "title":"Nuriben'i hiç tanımıyorsun 🥺",
-            "description":"",
-            "image":"https://cdn.discordapp.com/attachments/784115309710934019/802232025326682202/IMG_20210122_061035.png"
+            "title":"Nuriben'i Neredeyse Hiç Tanımıyorsun!!",
+            "description":"Fırsat insanın kapısını iki kez çalmaz, sen de ustamı tanıma fırsatını kaçırma!",
+            "image":"https://cdn.discordapp.com/attachments/785304684184993812/803332562138562590/878a00211e08dee8720011c066f3838b.png"
         },
         {
-            "title":"",
-            "description":"",
-            "image":""
+            "title":"Nuriben'i Biraz Daha Tanıman Gerek..",
+            "description":"Gölgesiz güneş yoktur ve geceyi tanımak gerekir... Haydi gel , gece sandığından daha derin.",
+            "image":"https://cdn.discordapp.com/attachments/785304684184993812/803338796926107698/unknown.png"
         },
         {
-            "title":"",
-            "description":"",
-            "image":""
+            "title":"Nuriben'i Ezbere Biliyorsun!!!",
+            "description":"İnsanları tanımak, denizleri bardak bardak boşaltmaktan daha zordur. Sen ustamı tanıyorsun. Doğru yoldasın , geri dönme.",
+            "image":"https://cdn.discordapp.com/attachments/785304684184993812/803340408968839168/unknown-removebg-preview.png"
         }
     ]
 }
