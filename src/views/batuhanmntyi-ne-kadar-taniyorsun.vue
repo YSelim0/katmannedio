@@ -5,7 +5,7 @@
             <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
             <p>➡️ Müzikleri istediğiniz zaman sağ üstten devre dışı bırakabilirsiniz.</p>
             <p>Başlamak İçin 'Başla' Tuşun Tıklayın.</p>
-            <button class="middle" v-on:click="screen='question';">Başla</button>
+            <button class="middle" @click="startTest()">Başla</button>
         </div>
         <div class="question" v-if="screen=='question'">
             <div class="title">
@@ -26,6 +26,7 @@
               <label for="optionD" @click="changeNextButton(true)">{{ optionD }}</label>
           </div>
           <div class="control flex">
+              <h4>Geçen Süre = {{timeMinuteValue+'dk '+timeSecondValue+'sn'}}</h4>
               <button @click="refreshQuestion()" v-bind:class="checked==true ? 'enable' : 'disable'">
                   {{ questionTurn!=10 ? 'Sonraki Soru' : 'Bitir' }}
               </button>
@@ -39,6 +40,7 @@
               <h1>{{ resultTitle }}</h1>
               <p>{{ resultDescription }}</p>
               <p style="margin-top: 10px;" class="bold">{{ totalPoint }} Doğru yaptın.</p>
+              <p style="margin-top: 10px;">{{ lastTime }}</p>
               <router-link to="/testler" class="middle">Testlere Dön</router-link>
           </div>
       </div>
@@ -76,6 +78,10 @@ export default {
             totalPoint:0,
             musicState:true,
             audioElement:null,
+            timeSecondValue:0,
+            timeMinuteValue:0,
+            counter:null,
+            lastTime:'',
         }
     },
     created(){
@@ -109,6 +115,7 @@ export default {
                 this.giveAnswer();
                 this.calculatePoints();
                 this.theEnd();
+                this.lastTime = 'Toplam '+this.timeMinuteValue+'dk '+this.timeSecondValue+'sn\'de bitirdiniz.';
             }
         },
         unCheckButtons(){
@@ -160,6 +167,18 @@ export default {
             this.resultDescription = test.result[index].description;
             this.resultImage = test.result[index].image;
         },
+        startTest(){
+            this.screen='question';
+            this.counter = setInterval(this.timeCounter,1000)
+        },
+        timeCounter(){
+            this.timeSecondValue++;
+            if(this.timeSecondValue==60)
+            {
+                this.timeSecondValue=0;
+                this.timeMinuteValue++;
+            }
+        },
         openCloseMusic(){
 
             if(this.musicState)
@@ -172,7 +191,6 @@ export default {
                 this.audioElement.play();
                 this.musicState=true;
             }
-
         }
     }
 }
@@ -284,6 +302,7 @@ export default {
     border-radius: 7px;
     cursor: pointer;
     transition: all .2s ease;
+    user-select: none;
 }
 
 .options label:hover {
@@ -292,7 +311,8 @@ export default {
 
 .control {
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 15px;
 }
 
@@ -304,6 +324,10 @@ export default {
     font-family: 'Poppins' , sans-serif;
     letter-spacing: 1px;
     user-select: none;
+}
+
+.control h4 {
+    font-family: 'Poppins' , sans-serif;
 }
 
 .enable {

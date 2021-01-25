@@ -32,9 +32,9 @@
             "id":4,
             "questionText":"Çağrı'nın eski Twitch nicki?",
             "optionA":"Kegri",
-            "optionB":"AynıTiyatrolar",
+            "optionB":"AyniTiyatrolar",
             "optionC":"MosyoKegri",
-            "optionD":"AynıSinemalar",
+            "optionD":"AyniSinemalar",
             "trueOption":"optionD"
         },
         {

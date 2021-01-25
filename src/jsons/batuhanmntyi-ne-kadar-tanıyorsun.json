@@ -23,9 +23,9 @@
             "id":3,
             "questionText":"BatuhanMNT hangi lakap ile anılır?",
             "optionA":"Kıl Yumağı",
-            "optionB":"Erkek!",
+            "optionB":"Yakışıklı 😉",
             "optionC":"Baco?",
-            "optionD":"Arda Turan",
+            "optionD":"dumkopf",
             "trueOption":"optionA"
         },
         {
@@ -59,8 +59,8 @@
             "id":7,
             "questionText":"BatuhanMNT'nin eski nicki?",
             "optionA":"Batuhan89gs",
-            "optionB":"BatuhanSinemalar",
-            "optionC":"Batuhan53",
+            "optionB":"BatuhanANT",
+            "optionC":"Batuhan53_",
             "optionD":"Batuhan840",
             "trueOption":"optionD"
         },
@@ -86,9 +86,9 @@
             "id":10,
             "questionText":"BatuhanMNT'nin güncel twitch takipçi sayısı?",
             "optionA":"18 Bin",
-            "optionB":"22 Bin",
+            "optionB":"27 Bin",
             "optionC":"25 Bin",
-            "optionD":"27 Bin",
+            "optionD":"22 Bin",
             "trueOption":"optionB"
         }
     ],

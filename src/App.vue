@@ -1,28 +1,6 @@
 <template>
     <div id="App">
-        <header class="ai-center jc-space" id="header">
-            <div class="logo">
-                <router-link to="/">
-                    <img src="./assets/katmannedioLogo.png" alt="logo">
-                </router-link>
-            </div>
-            <div class="nav">
-                <ul class="flex">
-                    <li>
-                        <router-link to="/">Anasayfa</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/testler">Testler</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/emegi-gecenler">Emeği Geçenler</router-link>
-                    </li>
-                    <li>
-                        <a href="http://aynisinemalar.com/" target="_blank">Hype <i class="fas fa-external-link-alt"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+        <SiteHeader />
         <div class="router-view-container">
             <router-view />
         </div>
@@ -30,6 +8,8 @@
 </template>
 
 <script>
+import SiteHeader from './components/SiteHeader.vue'
+
 export default {
     name:'App',
     data(){
@@ -38,10 +18,13 @@ export default {
         }
     },
     created(){
-
+        console.log("%cMerhaba, Bu kısımı açtıysan belli ki meraklı birisin 😀. Eğer bir sorun olursa bana discord veya websitem üzerinden ulaşabilirsin. ^^\n\nDiscord:Heaven#7091\n\nWebsite: https://yavuzselim.netlify.app","color:#6c63ff;-webkit-text-stroke: .9px black;font-size:25px;font-family:'Poppins',sans-serif;");
     },
     methods:{
 
+    },
+    components:{
+        SiteHeader,
     }
 }
 </script>
@@ -49,6 +32,5 @@ export default {
 <style>
 
 @import url('./css/main.css');
-@import url('./css/header.css');
 
 </style>

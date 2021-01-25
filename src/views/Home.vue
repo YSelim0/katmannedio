@@ -30,7 +30,7 @@
             <h4>Emeği Geçenler</h4>
           </div>
           <div class="card-body">
-            <p>Bütün bu yapıma katkıda herkesi bu kısımdan takip edebilirsiniz.</p>
+            <p>Bütün bu yapıma katkıda bulunan herkesi bu kısımdan takip edebilirsiniz.</p>
           </div>
           <div class="card-footer">
             <router-link to="/emegi-gecenler" class="middle">Gözat</router-link>

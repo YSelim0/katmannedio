@@ -21,6 +21,9 @@
           <h1>Daha Fazla İçerik Yakında...</h1>
           <p>Herhangi bir konuda fikriniz olursa Discord: <span onclick="window.open('https://yavuzselim.netlify.app/' , '_blank')">Heaven#7091</span></p>
       </div>
+      <div class="sign">
+          &copy;{{ getYear() }} CopyRight. Tüm Hakları MNT'nin kılları içinde saklıdır.
+      </div>
   </div>
 </template>
 
@@ -31,7 +34,8 @@ export default {
     name:'testler',
     data(){
         return {
-            tests:[]
+            tests:[],
+            dateYear:0,
         }
     },
     created(){
@@ -40,7 +44,10 @@ export default {
         this.tests = tests.tests;
     },
     methods:{
-        
+        getYear(){
+            let d = new Date();
+            return d.getFullYear();
+        }
     }
 }
 </script>
@@ -132,6 +139,15 @@ export default {
 
 .item .link a:hover {
     background-color: #766fff;
+}
+
+.sign {
+    font-family: 'Poppins' , sans-serif;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
 }
 
 </style>
