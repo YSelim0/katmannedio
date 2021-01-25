@@ -1,11 +1,18 @@
 <template>
-    <div class="main-container middle animate__animated animate__fadeInDown">
-        <div class="start flex" v-if="screen=='start'">
+    <div class="main-container middle ">
+        <div class="start flex animate__animated animate__fadeInDown" v-if="screen=='start'">
             <h1>{{ TestTitle }}</h1>
             <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
-            <p>➡️ Müzikleri istediğiniz zaman sağ üstten devre dışı bırakabilirsiniz.</p>
+            <p>🎵 Müzikleri istediğiniz zaman sağ üstten devre dışı bırakabilirsiniz.</p>
             <p>Başlamak İçin 'Başla' Tuşun Tıklayın.</p>
             <button class="middle" @click="startTest()">Başla</button>
+        </div>
+        <div class="switch-screen middle" v-if="screen=='switchScreen'" v-bind:style="'background-color:'+switchScreenColor+';'">
+            <h1>{{switchScreenTimer}}</h1>
+            <audio autoplay="true" controls="true" id="switchTimerSound" style="display: none;">
+                <source src="./../assets/tick.mp3" type="audio/mpeg">
+                <source src="./../assets/tick.mp3" type="audio/ogg">
+            </audio>
         </div>
         <div class="question" v-if="screen=='question'">
             <div class="title">
@@ -82,6 +89,9 @@ export default {
             timeMinuteValue:0,
             counter:null,
             lastTime:'',
+            switchScreenTimer:0,
+            switchScreenColor:'#4595d0',
+            switchScreenSound:null,
         }
     },
     created(){
@@ -94,6 +104,8 @@ export default {
     mounted(){
         this.audioElement = document.getElementById("ThemeSong");
         this.audioElement.volume = 0.1;
+        this.switchScreenSound = document.getElementById("switchTimerSound");
+        this.switchScreenSound.volume = 0.1;
     },
     methods:{
         refreshQuestion(){
@@ -168,8 +180,25 @@ export default {
             this.resultImage = test.result[index].image;
         },
         startTest(){
-            this.screen='question';
-            this.counter = setInterval(this.timeCounter,1000)
+            this.screen='switchScreen';
+            this.switchScreenTimer=3;
+            this.switchScreenSound.play();
+            this.switchScreenColor="#746cff";
+            setTimeout(() => {
+                this.switchScreenTimer=2;
+                this.switchScreenSound.play();
+                this.switchScreenColor="#3a2fff";
+            }, 1000);
+            setTimeout(() => {
+                this.switchScreenTimer=1;
+                this.switchScreenSound.play();
+                this.switchScreenColor="#746cff";
+            }, 2000);
+            this.switchScreenSound.pause();
+            setTimeout(() => {
+                this.screen='question';
+                this.counter = setInterval(this.timeCounter,1000)
+            }, 3500);
         },
         timeCounter(){
             this.timeSecondValue++;
@@ -405,6 +434,17 @@ export default {
     box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
     cursor: pointer;
+}
+
+.switch-screen {
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
 }
 
 </style>

@@ -3,7 +3,7 @@
         <div class="start flex" v-if="screen=='start'">
             <h1>{{ TestTitle }}</h1>
             <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
-            <p>➡️ Müzikleri istediğiniz zaman sağ üstten devre dışı bırakabilirsiniz.</p>
+            <p>🎵 Müzikleri istediğiniz zaman sağ üstten devre dışı bırakabilirsiniz.</p>
             <p>Başlamak İçin 'Başla' Tuşun Tıklayın.</p>
             <button class="middle" @click="startTest()">Başla</button>
         </div>
