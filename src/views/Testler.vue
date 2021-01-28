@@ -143,9 +143,6 @@ export default {
 
 .sign {
     font-family: 'Poppins' , sans-serif;
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
     width: 100%;
     text-align: center;
     font-size: 20px;

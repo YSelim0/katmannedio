@@ -1,27 +1,24 @@
 <template>
   <div class="main-container jc-center">
       <div class="container">
-          <div class="title">
-            <h1 class="middle"><span>•</span>Emeği Geçenler<span>•</span></h1>
-            <p>Yani Katkıda Bulunan Herkes.</p>
-          </div>
-          <div class="row animate__animated animate__bounceInLeft" v-for="(item , index) in crew" v-bind:key="index" v-bind:style="'animation-delay:'+(index*0.1)+'s;'">
-              <div class="row-line jc-space ai-center">
-                <h2>{{ item.username }}</h2>
-                <p>{{ item.role }}</p>
-              </div>
-              <div class="line"></div>
-          </div>
+        <div class="title">
+          <h1 class="middle"><span>•</span>Emeği Geçenler<span>•</span></h1>
+          <p>Yani Katkıda Bulunan Herkes.</p>
+        </div>
+    
+        <Person v-for="(item , index) in crew" v-bind:key="index" v-bind:image="item.image" v-bind:username="item.username" v-bind:role="item.role" v-bind:delay="index" />
+        
       </div>
       <h5 class="madeby animate__animated animate__fadeIn">
-          Made By
-          <span onclick="window.open('https://yavuzselim.netlify.app','_blank')">HæveN</span>
+        Made By
+        <span onclick="window.open('https://yavuzselim.netlify.app','_blank')">HæveN</span>
       </h5>
   </div>
 </template>
 
 <script>
 import ekip from './../jsons/EmegiGecenler.json';
+import Person from './../components/person';
 export default {
     name:'EmegiGecenler',
     data(){
@@ -34,6 +31,9 @@ export default {
         document.title = "Emeği Geçenler - KatmanNeDio?";
     },
     methods:{
+    },
+    components:{
+        Person,
     }
 }
 </script>
@@ -70,46 +70,6 @@ export default {
 .title p {
     font-family: 'Poppins' , sans-serif;
     margin-bottom: 20px;
-}
-
-.row {
-    width: 100%;
-    height: 35px;
-    margin: 10px 0px;
-    z-index: 5;
-}
-
-.row h2 {
-    font-size: 20px;
-    font-family: 'Mulish' , sans-serif;
-    transition: all .2s ease;
-    cursor: default;
-}
-
-.row p {
-    font-size: 20px;
-    font-family: 'Poppins' , sans-serif;
-    transition: all .2s ease;
-    cursor: default;
-}
-
-.row:hover h2 , .row:hover p {
-    font-size: 25px;
-}
-
-.row:hover {
-    z-index: 10;
-}
-
-.row .row-line {
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-.row .line {
-    width: 100%;
-    height: 2px;
-    background-color: rgb(185, 185, 185);
 }
 
 .madeby {

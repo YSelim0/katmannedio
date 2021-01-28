@@ -2,23 +2,28 @@
     "crew":[
         {
             "username":"Yavuz Selim (Heaven)",
-            "role":"Yazılımcı"
+            "role":"Yazılımcı",
+            "image":"https://instagram.fbtz1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/82346668_118227262770576_6527976455966556160_n.jpg?_nc_ht=instagram.fbtz1-1.fna.fbcdn.net&_nc_ohc=hUHjb6kAgdMAX-8ptat&tp=1&oh=9a30c78235d86c2eb0e9414546cf6424&oe=603D2DA1"
         },
         {
             "username":"AeK",
-            "role":"Baş Editör"
+            "role":"Editör",
+            "image":"https://cannt-acitn.ca/wp-content/uploads/2019/09/Image_Placeholder_.png"
         },
         {
             "username":"Kapişşş",
-            "role":"Test Sonu Yazısı"
+            "role":"Editör",
+            "image":"https://cannt-acitn.ca/wp-content/uploads/2019/09/Image_Placeholder_.png"
         },
         {
             "username":"Aleynn",
-            "role":"Görsel"
+            "role":"Görsel",
+            "image":"https://cannt-acitn.ca/wp-content/uploads/2019/09/Image_Placeholder_.png"
         },
         {
             "username":"Zobu",
-            "role":"Görsel"
+            "role":"Görsel",
+            "image":"https://cannt-acitn.ca/wp-content/uploads/2019/09/Image_Placeholder_.png"
         }
     ]
 }

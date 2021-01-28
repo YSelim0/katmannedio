@@ -1,9 +1,5 @@
 <template>
   <div class="container middle animate__animated animate__fadeInDown">
-      <div class="coming-soon middle" v-if="screen='comingSoon'">
-          <h1>Bu İçerik Yakında...</h1>
-          <p>Beklemede Kalın.</p>
-      </div>
       <div class="start flex" v-if="screen=='start'">
           <h1>{{ TestTitle }}</h1>
           <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
@@ -74,7 +70,7 @@ export default {
             optionC:'',
             optionD:'',
             checked:true,
-            screen:'comingSoon',
+            screen:'start',
             resultTitle:'',
             resultDescription:'',
             resultImage:'',
@@ -245,222 +241,11 @@ export default {
 
 <style scoped>
 
+@import url('./../css/testPage.css');
+
 .container {
     width: 100%;
     height: 100vh;
-}
-
-.question {
-    width: 700px;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
-    background-color: rgb(228, 228, 228);
-    padding: 25px;
-}
-
-.title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.title h1 {
-    font-family: 'Mulish' , sans-serif;
-}
-
-.question-text {
-    width: 100%;
-    padding: 10px 0px;
-    text-align: start;
-}
-
-.question-text h1 {
-    font-size: 50px;
-    margin-right: 25px;
-}
-
-.question-text p {
-    font-family: 'Poppins' , sans-serif;
-}
-
-.options {
-    width: 100%;
-    padding: 10px 0px;
-    flex-direction: column;
-    border-top: 1px solid rgb(170, 170, 170);
-    border-bottom: 1px solid rgb(170, 170, 170);
-}
-
-.options input {
-    display: none;
-}
-
-.options input:checked + label {
-    background-color: #736cff;
-}
-
-.options label {
-    font-family: 'Poppins' , sans-serif;
-    width: 100%;
-    height: 45px;
-    margin: 5px 0px;
-    border: 2px solid #6c63ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all .2s ease;
-    user-select: none;
-}
-
-.options label:hover {
-    background-color: #6c63ff;
-}
-
-.control {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.control button {
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 7px;
-    font-family: 'Poppins' , sans-serif;
-    letter-spacing: 1px;
-    user-select: none;
-}
-
-.control h4 {
-    font-family: 'Poppins' , sans-serif;
-}
-
-.enable {
-    background-color: #6c63ff !important;
-    color: white !important;
-    cursor: pointer !important;
-}
-
-.disable {
-    background-color: #9e99ff !important;
-    color: black !important;
-    cursor: no-drop !important;
-}
-
-.start {
-    width: 450px;
-    padding: 25px;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
-    background-color: rgb(228, 228, 228);
-    flex-direction: column;
-    align-items: center;
-}
-
-.start h1 {
-    font-family: 'Mulish' , sans-serif;
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.start p {
-    font-family: 'Poppins' , sans-serif;
-    margin-bottom: 15px;
-}
-
-.start button {
-    width: 100%;
-    height: 40px;
-    background-color: #6c63ff;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-family: 'Poppins' , sans-serif;
-    color: white;
-    cursor: pointer;
-}
-
-.start button:hover {
-    background-color: #6b63ffda;
-}
-
-.end {
-    width: 900px;
-    padding: 25px;
-    flex-direction: column;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
-    background-color: rgb(228, 228, 228);
-    position: relative;
-}
-
-.end .photo img {
-    width: 60%;
-}
-
-.end .description {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.end .description h1 {
-    font-family: 'Mulish' , sans-serif;
-    margin-bottom: 15px;
-}
-
-.end .description p {
-    font-family: 'Roboto' , sans-serif;
-}
-
-.note {
-    text-decoration: underline;
-    margin-top: 30px;
-}
-
-.end .description a {
-    width: 100%;
-    height: 45px;
-    font-size: 23px;
-    background-color: #766fff;
-    color: white;
-    font-family: 'Poppins' , sans-serif;
-    margin-top: 20px;
-    border-radius: 3px;
-    transition: all .3s ease;
-}
-
-.end .description a:hover {
-    background-color: #8f89ff;
-}
-
-.switch-screen {
-    width: 300px;
-    height: 300px;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.2);
-    transition: all .3s ease;
-    border-radius: 50%;
-    color: white;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 60px;
-}
-
-.coming-soon {
-    width: 600px;
-    padding: 50px 0px;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
-    background-color: rgb(228, 228, 228);
-    flex-direction: column;
-}
-
-.coming-soon h1 {
-    font-family: 'Mulish' , sans-serif;
-    font-size: 35px;
-}
-
-.coming-soon p {
-    font-family: 'Poppins' , sans-serif;
-    font-size: 25px;
 }
 
 </style>
