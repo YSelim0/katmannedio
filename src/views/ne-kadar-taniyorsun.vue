@@ -1,5 +1,5 @@
 <template>
-    <div class="main-container middle animate__animated animate__fadeInDown">
+    <div class="main-container middle animate__animated animate__fadeInDown" v-if="test != null">
         <div class="start flex" v-if="screen=='start'">
             <h1>{{ TestTitle }}</h1>
             <p>Unutmayın önceki soruya geri dönemezsiniz!</p>
@@ -55,20 +55,19 @@
         <i class="fas fa-volume-up" v-if="musicState"></i>
         <i class="fas fa-volume-mute" v-else></i>
         <audio autoplay="true" controls="true" loop id="ThemeSong" style="display: none;">
-            <source src="./../assets/uzi-makina.mp3" type="audio/mpeg">
-            <source src="./../assets/uzi-makina.mp3" type="audio/ogg">
+            <source :src="getSongPath()" type="audio/mpeg">
+            <source :src="getSongPath()" type="audio/ogg">
         </audio>
       </div>
     </div>  
 </template>
 
 <script>
-import test from './../jsons/nuribeni-ne-kadar-tanıyorsun.json';
-
 export default {
-    name:'nuribeni-ne-kadar-tanıyorsun',
+    name:'ne-kadar-tanıyorsun',
     data(){
         return{
+            test: null,
             screen:'start',
             TestTitle:'',
             questionTurn:0,
@@ -94,16 +93,14 @@ export default {
             switchScreenColor:'#4595d0',
         }
     },
-    created(){
-        this.TestTitle = test.title;
-        this.questions = test.questions;
+    async created(){
+        this.test = (await import("../jsons/" + this.$route.params.name + "-ne-kadar-tanıyorsun")).default;
+
+        this.TestTitle = this.test.title;
+        this.questions = this.test.questions;
 
         this.refreshQuestion();
-        document.title = "Nuriben'i Ne Kadar Tanıyorsun? - KatmanNeDio?";
-    },
-    mounted(){
-        this.audioElement = document.getElementById("ThemeSong");
-        this.audioElement.volume = 0.02;
+        document.title = this.test.pageTitle;
     },
     methods:{
         refreshQuestion(){
@@ -153,7 +150,7 @@ export default {
         calculatePoints(){
             for(let i=0; i<this.answers.length; i++)
             {
-                if(test.questions[i].trueOption==this.answers[i])
+                if(this.test.questions[i].trueOption==this.answers[i])
                 {
                     this.totalPoint++;
                 }
@@ -173,9 +170,9 @@ export default {
             {
                 index=2;
             }
-            this.resultTitle = test.result[index].title;
-            this.resultDescription = test.result[index].description;
-            this.resultImage = test.result[index].image;
+            this.resultTitle = this.test.result[index].title;
+            this.resultDescription = this.test.result[index].description;
+            this.resultImage = this.test.result[index].image;
         },
         startTest(){
             this.screen='switchScreen';
@@ -215,6 +212,9 @@ export default {
                 this.musicState=true;
             }
 
+        },
+        getSongPath() {
+            return require(`./../assets/${this.test.songFile}`);
         }
     }
 }
