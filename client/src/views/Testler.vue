@@ -5,19 +5,22 @@
       </div>
       <div class="tests middle">
 
-          <div class="item-container" v-for="(item , index) in tests" v-bind:key="index">
-            <div class="item animate__animated animate__fadeInUp" v-bind:style="'animation-delay:'+(index*0.1)+'s;'">
-              <img v-bind:src="item.imageUrl" v-bind:alt="item.slug">
-              <div class="description">
-                <h1>{{ item.title.length>30 ? item.title.slice(0,30)+'...' : item.title }}</h1>
-                <h4>{{item.title}}</h4>
-                <p>{{ item.date }}</p>
-              </div>
-              <div class="link">
-                <router-link v-bind:to="item.slug" class="middle">Teste Başla</router-link>
-              </div>
+        <div class="item-container" v-for="(item , index) in tests" v-bind:key="index">
+          <div class="item animate__animated animate__fadeInUp" v-bind:style="'animation-delay:'+(index*0.1)+'s;'">
+            <img v-bind:src="item.imageUrl" v-bind:alt="item.slug">
+            <div class="description">
+              <h1>{{ item.title.length>30 ? item.title.slice(0,30)+'...' : item.title }}</h1>
+              <h4>{{item.title}}</h4>
+              <p>{{ item.date }}</p>
+            </div>
+            <div class="link">
+              <router-link v-bind:to="item.slug" class="middle">Teste Başla</router-link>
+            </div>
+            <div class="date" v-if="dateControl(item.date)">
+              <h3>YENİ!</h3>
             </div>
           </div>
+        </div>
 
       </div>
       <div class="title animate__animated animate__fadeIn">
@@ -50,6 +53,24 @@ export default {
         getYear(){
             let d = new Date();
             return d.getFullYear();
+        },
+        dateControl(date){
+            let day = Number(String(date[0])+String(date[1]));
+            let month = Number(String(date[3])+String(date[4]));
+            let d = new Date();
+            let nowDay = d.getDate()-7;
+            nowDay = nowDay<=0 ? 30+nowDay : nowDay;
+            let status = false;
+            
+            if(month==d.getMonth()+1)
+            {
+                d.getDate()-7<=day ? status=true : null;
+            }
+            else if(month==d.getMonth())
+            {
+                nowDay<=day ? status=true : null;
+            }
+            return status;
         }
     }
 }
@@ -174,6 +195,19 @@ export default {
     width: 100%;
     text-align: center;
     font-size: 20px;
+}
+
+.date {
+    padding: 5px 10px;
+    background-color: rgb(255, 64, 64);
+    color: white;
+    font-family: 'Mulish' , sans-serif;
+    position: absolute;
+    top: -8px;
+    left: -15px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transform: rotateZ(-20deg);
 }
 
 </style>
