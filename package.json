@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "start": "npm run serve & (cd ../client/ && npm run serve)"
+    "start": "(cd ./server && npm run serve) & (cd ../client/ && npm run serve)"
   }
 }
