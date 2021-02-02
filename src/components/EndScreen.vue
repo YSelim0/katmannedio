@@ -1,0 +1,80 @@
+<template>
+  <div class="end flex ai-center animate__animated animate__tada">
+      <div class="photo middle">
+        <img v-bind:src="resultImage" v-bind:alt="resultTitle">
+      </div>
+      <div class="description">
+        <h1>{{ resultTitle }}</h1>
+        <p>{{ resultDescription }}</p>
+        <p style="margin-top: 10px;" class="bold" v-if="totalPoint!=null">{{ totalPoint }} Doğru yaptın.</p>
+        <p style="margin-top: 10px;">{{ lastTime }}</p>
+        <router-link to="/testler" class="middle">Testlere Dön</router-link>
+      </div>
+  </div>
+</template>
+
+<script>
+export default {
+    name:'EndScreen',
+    props:[
+        'resultImage',
+        'resultTitle',
+        'resultDescription',
+        'totalPoint',
+        'lastTime'
+    ]
+}
+</script>
+
+<style scoped>
+
+.end {
+    width: 900px;
+    padding: 25px;
+    flex-direction: column;
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.342);
+    background-color: rgb(228, 228, 228);
+    position: relative;
+}
+
+.end .photo img {
+    width: 60%;
+}
+
+.end .description {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.end .description h1 {
+    font-family: 'Mulish' , sans-serif;
+    margin-bottom: 15px;
+}
+
+.end .description p {
+    font-family: 'Roboto' , sans-serif;
+}
+
+.note {
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+.end .description a {
+    width: 100%;
+    height: 45px;
+    font-size: 23px;
+    background-color: #766fff;
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+    margin-top: 20px;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+
+.end .description a:hover {
+    background-color: #8f89ff;
+}
+
+</style>

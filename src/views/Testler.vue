@@ -5,15 +5,18 @@
       </div>
       <div class="tests middle">
 
-          <div class="item animate__animated animate__fadeInUp" v-for="(item , index) in tests" v-bind:key="index" id="deneme" v-bind:style="'animation-delay:'+(index*0.1)+'s;'">
+          <div class="item-container" v-for="(item , index) in tests" v-bind:key="index">
+            <div class="item animate__animated animate__fadeInUp" v-bind:style="'animation-delay:'+(index*0.1)+'s;'">
               <img v-bind:src="item.imageUrl" v-bind:alt="item.slug">
               <div class="description">
-                  <h1>{{ item.title }}</h1>
-                  <p>{{ item.date }}</p>
+                <h1>{{ item.title.length>30 ? item.title.slice(0,30)+'...' : item.title }}</h1>
+                <h4>{{item.title}}</h4>
+                <p>{{ item.date }}</p>
               </div>
               <div class="link">
-                    <router-link v-bind:to="item.slug" class="middle">Teste Başla</router-link>
+                <router-link v-bind:to="item.slug" class="middle">Teste Başla</router-link>
               </div>
+            </div>
           </div>
 
       </div>
@@ -88,15 +91,20 @@ export default {
     flex-wrap: wrap;
 }
 
-.item {
+.item-container {
     width: 350px;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.246);
     margin: 20px;
     transition: all .3s ease;
 }
 
-.item:hover {
-    margin-top: -20px;
+.item-container:hover {
+    transform: scale(1.05);
+}
+
+.item {
+    width: 100%;
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.246);
+    transition: all .3s ease;
 }
 
 .item img {
@@ -108,12 +116,32 @@ export default {
 
 .item .description {
     padding: 10px;
+    position: relative;
 }
 
 .item .description h1 {
     font-family: 'Mulish' , sans-serif;
     font-size: 20px;
     margin-bottom: 5px;
+}
+
+.item .description h1:hover + h4 , .description h4:hover {
+    display: block;
+}
+
+.description h4 {
+    position: absolute;
+    top: -15px;
+    left: 8px;
+    padding: 3px 5px;
+    display: none;
+    background-color: #141414;
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 12px;
 }
 
 .item .description p {
