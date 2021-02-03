@@ -7,6 +7,10 @@
     "start": "(cd ./client && npm run build) && cd server && ls && nodemon index.js",
     "dev": "nodemon server/index"
   },
+  "engines": {
+    "node": "12.18.2",
+    "npm": "6.14.8"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
