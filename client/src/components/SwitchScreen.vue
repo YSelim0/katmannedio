@@ -1,5 +1,5 @@
 <template>
-  <div class="switch-screen middle animate__animated animate__fadeIn"  v-bind:style="'background-color:'+switchScreenColor+'; border-radius:'+radiusValue+'%;'">
+  <div class="switch-screen middle animate__animated" :class="animationClass" v-bind:style="'background-color:'+switchScreenColor+'; border-radius:'+radiusValue+'%;'">
         <h1>{{switchScreenTimer}}</h1>
         <audio autoplay="true" controls="true" style="display: none;">
           <source src="./../assets/ticktack.mp3" type="audio/mpeg">
@@ -19,6 +19,7 @@ export default {
             switchScreenColor:'#746cff',
             switchScreenTimer:3,
             radiusValue:50,
+            animationClass:'animate__fadeIn',
         }
     },
     created(){
@@ -31,6 +32,7 @@ export default {
             this.switchScreenTimer=1;
             this.radiusValue=50;
             this.switchScreenColor="#746cff";
+            this.animationClass = 'animate__rotateOut';
         }, 2200);
     }
 }

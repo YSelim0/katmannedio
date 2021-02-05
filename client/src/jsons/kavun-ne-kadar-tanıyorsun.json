@@ -1,0 +1,114 @@
+{
+    "title":"Kavun'u Ne Kadar Tanıyorsun?",
+    "pageTitle": "Kavun'u Ne Kadar Tanıyorsun? - KatmanNeDio?",
+    "songFile": "kavun.mp3",
+    "questions":[
+        {
+            "id":1,
+            "questionText":"Kavunun gerçek adı nedir?",
+            "optionA":"Ahmet",
+            "optionB":"Süleyman",
+            "optionC":"Tolga",
+            "optionD":"Hayrettin",
+            "trueOption":"optionD"
+        },
+        {
+            "id":2,
+            "questionText":"Project Winter oyununda Kavunun en fazla kullandığı söz?",
+            "optionA":"Çağrı bi gelsene kanka",
+            "optionB":"Hamsi",
+            "optionC":"Aynen öyle bu arada",
+            "optionD":"Amınakoyim Batuhan",
+            "trueOption":"optionA"
+        },
+        {
+            "id":3,
+            "questionText":"Kavun kaç yaşındadır?",
+            "optionA":"22",
+            "optionB":"24",
+            "optionC":"26",
+            "optionD":"28",
+            "trueOption":"optionD"
+        },
+        {
+            "id":4,
+            "questionText":"Kavunun gizli aşkı kimdir?",
+            "optionA":"BatuhanMNT",
+            "optionB":"Mete53_",
+            "optionC":"Nuriben",
+            "optionD":"Gugucan",
+            "trueOption":"optionB"
+        },
+        {
+            "id":5,
+            "questionText":"Kavun ekibe nasıl dahil olmuştur?",
+            "optionA":"Kişneyerek",
+            "optionB":"Oyundan tanışarak",
+            "optionC":"Roleplay sunucusundan tanışarak",
+            "optionD":"Çağrının zaten eski bir arkadaşıdır",
+            "trueOption":"optionA"
+        },
+        {
+            "id":6,
+            "questionText":"Kavun'un Instagram adresi?",
+            "optionA":"Kavun89gs",
+            "optionB":"Kawun",
+            "optionC":"kavun_xd",
+            "optionD":"Sukavunu",
+            "trueOption":"optionC"
+        },
+        {
+            "id":7,
+            "questionText":"Kavun Çağrı'nın kanalında kaç ay abonedir?",
+            "optionA":"12 ay",
+            "optionB":"8 ay",
+            "optionC":"15 ay",
+            "optionD":"22 ay",
+            "trueOption":"optionA"
+        },
+        {
+            "id":8,
+            "questionText":"Kavun, Petric ve Çağrı ile beraber Katman Dates şarkısını kaç saatte yapmıştır?",
+            "optionA":"48 Saat",
+            "optionB":"12 Saat",
+            "optionC":"1 Hafta",
+            "optionD":"8 Saat",
+            "trueOption":"optionD"
+        },
+        {
+            "id":9,
+            "questionText":"Kavun'un yayınlarda yapmaktan en keyif aldığı şey?",
+            "optionA":"Oyunları trollemek",
+            "optionB":"her şeye gülmek",
+            "optionC":"Mete53_'ü tilt etmek",
+            "optionD":"Hepsi",
+            "trueOption":"optionD"
+        },
+        {
+            "id":10,
+            "questionText":"Kavun'un profesyonel oyuncuyken kullandığı nick?",
+            "optionA":"Sukavunu",
+            "optionB":"Kage B",
+            "optionC":"Kavun840",
+            "optionD":"Kavun53",
+            "trueOption":"optionB"
+        }
+    ],
+    "result":[
+        {
+            "title":"Biraz Daha Tanıman Gerek...",
+            "description":"Kavun'a biraz daha şans vermen gerek. Bize kalırsa gayet müzik olarak, gayette mizah olarak başarılı biri. Beraber zaman geçirmek istersen discorda gelebilirsin. Mutlaka herkese açık bir odada onu göreceksin...",
+            "image":"https://cdn.discordapp.com/attachments/741666254942896239/806611913642475580/unknown.png"
+        },
+        {
+            "title":"Kavun'u Yeterince Tanıyorsun",
+            "description":"Kavun'un kim olduğunu bilecek kadar tanıyorsun. Daha fazla tanımak bir şey kaybettirmez. Ama dikkat o mizahi yakalayınca bağımlısı olabilirsin. 😉",
+            "image":"https://cdn.discordapp.com/attachments/754500068681318431/806609633803632650/al_yarram.png"
+        },
+        {
+            "title":"Kavun'u Tanıyorsun!!",
+            "description":"Kavun'u son derecede tanıyorsun. Yüksek ihtimalle yayınları kaçırmıyor ve kavunu seviyorsun. -ki hakkında bu kadar çok şey öğrenmişsin.",
+            "image":"https://cdn.discordapp.com/attachments/759382105921945650/806641354490118164/kasliKavn.jpg"
+        }
+    ]
+}

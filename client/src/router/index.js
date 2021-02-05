@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Testler from '../views/Testler.vue'
 import hangiKatmanKarakterisin from '../views/hangi-katman-karakterisin.vue'
 import EmegiGecenler from '../views/EmegiGecenler.vue'
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/ne-kadar-taniyorsun/:name',
     name: 'ne-kadar-taniyorsun',
     component: () => import("../views/ne-kadar-taniyorsun")
+  },
+  {
+    path: '/*',
+    name: 'NotFound',
+    component: NotFound
   }
 ]
 

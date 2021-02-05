@@ -140,7 +140,7 @@ export default {
             setTimeout(() => {
                 this.screen='question';
                 this.counter = setInterval(this.timeCounter,1000)
-            }, 3500);
+            }, 3000);
         },
         timeCounter(){
             this.timeSecondValue++;

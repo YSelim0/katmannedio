@@ -86,9 +86,9 @@
         },
         {
             "id":10,
-            "questionText":"BatuhanMNT'nin güncel twitch takipçi sayısı?",
+            "questionText":"BatuhanMNT'nin güncel twitch takipçi sayısı? (Şubat 2021)",
             "optionA":"18 Bin",
-            "optionB":"27 Bin",
+            "optionB":"29 Bin",
             "optionC":"25 Bin",
             "optionD":"22 Bin",
             "trueOption":"optionB"

@@ -17,7 +17,7 @@
               <router-link v-bind:to="item.slug" class="middle">Teste Başla</router-link>
             </div>
             <div class="date" v-if="dateControl(item.date)">
-              <h3>YENİ!</h3>
+              <h3 class="ai-center">YENİ<i class="fas fa-star"></i></h3>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@
       </div>
       <div class="title animate__animated animate__fadeIn">
           <h1>Daha Fazla İçerik Yakında...</h1>
-          <p>Herhangi bir konuda fikriniz olursa Discord: <span onclick="window.open('https://yavuzselim.netlify.app/' , '_blank')">Heaven#7091</span></p>
+          <p>Herhangi bir konuda fikriniz olursa Discord: <span onclick="window.open('https://discord.com/users/411808609836597270' , '_blank')">Heaven#7091</span></p>
       </div>
       <div class="sign">
           &copy;{{ getYear() }} CopyRight. Tüm Hakları MNT'nin kılları içinde saklıdır.
