@@ -11,7 +11,7 @@
             <source :src="getSongPath()" type="audio/ogg">
         </audio>
       </div>
-    </div>  
+    </div>
 </template>
 
 <script>

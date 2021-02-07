@@ -156,7 +156,6 @@ html, body{
     background-position: left top;
     height: 100%;
     overflow: hidden;
-    
 }
 
 .custom-navbar{
@@ -171,11 +170,8 @@ html, body{
 
 .navbar-links{
     display: inline-block;
-    float: right;
     margin-right: 15px;
     text-transform: uppercase;
-    
-    
 }
 
 ul {
@@ -292,10 +288,6 @@ li a:hover {
     transform: rotate(0deg);
     transition: transform ease-in 99999999999s;
 */
-}
-
-.earth-moon{
-    
 }
 
 .object_astronaut{
