@@ -109,6 +109,7 @@ export default {
     cursor: pointer;
     transition: all .2s ease;
     user-select: none;
+    text-align: center;
 }
 
 .options label:hover {

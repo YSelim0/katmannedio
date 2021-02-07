@@ -56,12 +56,16 @@ export default {
         }
     },
     async created(){
-        this.test = (await import("../jsons/" + this.$route.params.name + "-ne-kadar-tanıyorsun")).default;
-        this.TestTitle = this.test.title;
-        this.questions = this.test.questions;
+        try {
+            this.test = (await import("../jsons/" + this.$route.params.name + "-ne-kadar-tanıyorsun")).default;
+            this.TestTitle = this.test.title;
+            this.questions = this.test.questions;
 
-        this.refreshQuestion();
-        document.title = this.test.pageTitle;
+            this.refreshQuestion();
+            document.title = this.test.pageTitle;   
+        } catch (e) {
+            this.$router.push('/404');
+        }
     },
     methods:{
         refreshQuestion(){
