@@ -272,6 +272,7 @@ export default {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
+    z-index: -1;
 }
 
 .add-image img {

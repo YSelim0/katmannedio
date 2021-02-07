@@ -1,5 +1,5 @@
 <template>
-  <div class="end flex ai-center animate__animated animate__tada">
+  <div class="end flex ai-center animate__animated animate__tada" :style="'width:'+containerWidth+'px'">
       <div class="photo middle">
         <img v-bind:src="resultImage" v-bind:alt="resultTitle">
       </div>
@@ -22,7 +22,18 @@ export default {
         'resultDescription',
         'totalPoint',
         'lastTime'
-    ]
+    ],
+    data(){
+        return {
+            containerWidth:900,
+        }
+    },
+    created(){
+        if(window.innerWidth<1140)
+        {
+            this.containerWidth = 600;
+        }
+    }
 }
 </script>
 
