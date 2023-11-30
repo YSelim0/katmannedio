@@ -46,7 +46,7 @@ export default {
     padding: 5px 10px;
     background-color: #fff;
     border-radius: 7px;
-    box-shadow: 3px 3px 6px 1px rgba(0,0,0,.199);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-left: 4px solid #6d64ff;
     transition: all .3s ease;
     margin-left: -1px;
@@ -62,6 +62,7 @@ export default {
     margin-right: 10px;
     user-select: none;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .profile h3 {

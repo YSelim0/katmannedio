@@ -46,7 +46,8 @@ export default {
 header {
     width: 100%;
     height: 75px;
-    background-color: #141414;
+    background-color: rgba(105, 97, 255, 0.7);
+    backdrop-filter: blur(5px);
     color: white;
     padding: 0px 100px;
     position: fixed;
@@ -73,7 +74,7 @@ header .nav ul li a {
 }
 
 header .nav ul li a:hover {
-    color: rgb(179, 179, 179);
+    color: rgba(255, 255, 255, .7);
 }
 
 </style>

@@ -6,7 +6,6 @@
         <div class="message">
           <h1>KatmanNeDio?</h1>
           <p>Merhabalar, forumumuza hoşgeldiniz. İçeride çeşitli testler ve eğlenceli içerikler bulunuyor. İyi Eğlenceler!</p>
-          <p>Not: Yakın zamanda içerikler çoğaltılacaktır.</p>
         </div>
       </div>
       <div class="products middle">
@@ -83,10 +82,10 @@ export default {
 
 .welcome {
   width: 100%;
-  padding: 50px 0px;
-  background-image: url('https://images.pexels.com/photos/747101/pexels-photo-747101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  /*background-image: url('https://images.pexels.com/photos/23273/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
-  background-size: 100% 350%;
+  padding: 150px 0px;
+  background-image: url('./../assets/banner.jpg');
+  /*background-image: url('https://images.pexels.com/photos/747101/pexels-photo-747101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -94,7 +93,8 @@ export default {
 .message {
   width: 600px;
   padding: 25px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(108, 99, 255, 0.1);
+  backdrop-filter: blur(10px);
   text-align: center;
   color: white;
   border-radius: 3px;
@@ -120,9 +120,15 @@ export default {
 .card {
   width: 350px;
   background-color: white;
-  box-shadow: 2px 2px 30px 10px rgba(0, 0, 0, 0.274);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 5px;
   padding: 20px;
   margin: 20px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .card .card-header {

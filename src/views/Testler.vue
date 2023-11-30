@@ -1,5 +1,5 @@
 <template>
-  <div id="testler">
+  <div class="tests-page-container">
       <div class="title">
           <h1>Tüm Testler</h1>
       </div>
@@ -24,7 +24,6 @@
 
       </div>
       <div class="title animate__animated animate__fadeIn">
-          <h1>Daha Fazla İçerik Yakında...</h1>
           <p>Herhangi bir konuda fikriniz olursa Discord: <span onclick="window.open('https://discord.com/users/411808609836597270' , '_blank')">Heaven#7091</span></p>
       </div>
       <div class="sign">
@@ -78,11 +77,14 @@ export default {
 
 <style scoped>
 
+.tests-page-container {
+    padding-top: 50px;
+}
+
 .title {
     width: 100%;
     text-align: center;
     padding-top: 25px;
-    margin-bottom: 25px;
     animation-duration: 2s;
 }
 
@@ -118,14 +120,16 @@ export default {
     transition: all .3s ease;
 }
 
-.item-container:hover {
-    transform: scale(1.05);
-}
-
 .item {
     width: 100%;
-    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.246);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px;
     transition: all .3s ease;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.item:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .item img {
@@ -166,8 +170,8 @@ export default {
 }
 
 .item .description p {
-    font-family: 'consolas' , sans-serif;
-    font-size: 15px;
+    font-family: 'Mulish' , sans-serif;
+    font-size: 13px;
     color: rgb(155, 155, 155);
 }
 

@@ -125,10 +125,10 @@ export default {
         calculatePoints(){
             for(let i=0; i<this.answers.length; i++)
             {
-                let person = test.questions[i].[this.answers[i]+'person'];
+                let person = test.questions[i][this.answers[i]+'person'];
                 if(person!="hepsi")
                 {
-                    this.[person.toLowerCase()+'Counter']++;
+                    this[person.toLowerCase()+'Counter']++;
                 }
                 else
                 {
